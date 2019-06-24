@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Lab 5</title>
+	<link href="index_lab5.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+	.auto {
+		display: block;
+		border: 1px solid black;
+		padding: 10px;
+		margin-top: 50px;
+		margin-left: 0px;
+		width: 800px;
+		height:500px;
+		overflow: auto;
+	}
+</style>
+<body>
+	<div id="wrapper" align="center">
+		<div id="header"></div>
+		<div id="content" align="left" class="auto" >
+			<span align="center"><font face="Comic Sans MS"><center><b><h2>Interview Feedback</h2></b></center></span><br/>
+				<span ><b><h3>This type of form may be an easy way to consolidate/standardize feedback on interview candidates.</h3></b></span><br/>
+				<b>Candidate Name</b><input type="text" name="CandidateName"/>
+				<b>Position Applied For</b><input type="text" name="PositionAppliedFor"/>
+				<br><br>
+				<table width="40%" border="0" align="left" cellspacing ="0" cellpadding="5">
+					<tr valign= "top">
+						<td style="width:250;">
+							<b>Education Level </b><br/>
+							<select>
+								<option value="HS">1)High School</option>
+								<option value="BD">2)Bachelors Degree</option>
+								<option value="MD">3)Masters Degree</option>
+								<option value="DD">4)Doctoral Degree</option>
+								<option value="PC">5)Professional Certification</option>
+							</select>
+						</td>	
+						<td style="width:550;">
+							<label for="r1" ><b>Candidate is a good fit for the position</b></label><br/>
+							<font face="Times New Roman">
+								<input type="radio" name="r1" value="1"/>Agree<br/>
+								<input type="radio" name="r1" value="2"/>Somewhat Agree<br/>
+								<input type="radio" name="r1" value="3"/>Neutral<br/>
+								<input type="radio" name="r1" value="4"/>Somewhat Disagree<br/>
+								<input type="radio" name="r1" value="5"/>Disagree
+							</font>
+						</td>
+					</tr>
+				</table><br>
+				<label for="r2"><b>Should we hire this candidates?</b></label>
+				<input type="radio" name="r2" value="1"/> Yes
+				<input type="radio" name="r2" value="2"/>No<br/><br/>
+				<b>Comments</b>
+				<textarea cols="30" rows="6"style="overflow:scroll;">
+				</textarea>
+			</font><br><br>
+			<span style="text-align: center">
+				<form>   
+					<input type="button" value="Submit">
+				</form>
+			</span>
+		</div>
+	</div>
+</body>
+</html>

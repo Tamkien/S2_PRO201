@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+#wrapper {
+	margin: auto;
+	height: 700px;
+	width: 800px;
+	background:white;	 
+}
+body {
+	margin: center;
+}
+input {
+	type: text;
+}
+table {
+	height: 150px;
+	width: 800px;
+}
+
+
+#header {
+	
+}
+h1 {
+
+}
+
+#content {
+	margin: center;
+	height: 500px;
+	width: 800px;
+	background: white;
+
+	
+}
+h1 {
+
+}
+#footer {
+
+}
+img {
+}
