@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Lab 06</title>
+	<script language="Javascript">
+		function CheckNameCode()
+		{reg1 = /[^a-zA-z ]/;
+			reg2 = /[^a-z0-9]/i;
+			mName = document.frm1.Name.value;
+			mCode = document.frm1.Code.value;
+			if(mName=="" || reg1.test(mName)==true || mCode=="" || reg2.test(mCode)==true || action.checked==false)
+				{alert("Invalid information, please try again!");
+			document.frm1.Name.value="";
+			document.frm1.Name.focus(); 
+			document.frm1.Code.value=""; 
+			document.frm1.Code.focus();
+		}
+		else
+		{ 
+			for(i=0;i<frm1.r.length;i++)
+				for(j=0;j<frm1.s.length;j++)
+				{
+					
+					if(frm1.r[i].checked && frm1.s[j].selected   ) 
+						alert("Information of new user has been added"); 
+				}
+				document.frm1.Name.focus();
+			}
+		}
+	</script>
+</head>
+<body>
+	<div style="text-align: left" class="auto" > 
+		<table width="60%" border="0" align="center" cellspacing ="0" cellpadding="5" style="width:600; height:150" >	
+			<tr>
+				<td>
+					<span style="color: Blue" > 
+						<h1> Enter information of new user </h1><br>
+					</span>
+					<form action="" method="GET" name="frm1">
+						Name 
+						<input  type="text" name="Name"  required pattern="[a-zA-Z ]{5,30}" /><br>
+						<br>
+						Code
+						<input type="text" name="Code" required/> <br>
+						<br>
+						Gender 
+						<select name="s"required requiredmsg="Please, pick one" >
+							<option  selected disabled value=""> Select</option>
+							<option  value="1" required/> Male</option>
+							<option  value="2"required/> Female</option>
+						</select> <br>
+						<br>
+						<label for="r">Type </label>
+						<input type="radio" id="action" name="r" value="0" required/> Admin
+						<input type="radio" id="action" name="r" value="1" required/>Standard<br /><br /><br>
+						<input  type="submit" value="Send" onClick = 'CheckNameCode();CheckChoose();'>
+						<input  type="reset" value="Reset" >		
+					</form>
+				</td>
+			</tr>
+		</table>	
+	</div>
+</body>
+</html>
