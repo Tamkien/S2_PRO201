@@ -1,0 +1,282 @@
+s<!DOCTYPE html>
+<html>
+<head>
+	<title>NhaTu</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/ico" href="logo.png" />
+	<style>
+		p.small {
+			line-height: 0;
+		}
+
+		img.sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		/* Style the header */
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+
+		/* Middle column */
+		.column.middle {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}
+		}
+
+		hr.line {
+			border: 1px solid red;
+		}
+
+		.box {
+			width: 60px;
+			height: 25px;
+			border: 1px solid gray;
+			background-color: gray;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.rate {
+			float: left;
+			height: 46px;
+			padding: 0 10px;
+		}
+		.rate:not(:checked) > input {
+			position:absolute;
+			top:-9999px;
+		}
+		.rate:not(:checked) > label {
+			float:right;
+			width:1em;
+			overflow:hidden;
+			white-space:nowrap;
+			cursor:pointer;
+			font-size:30px;
+			color:#ccc;
+		}
+		.rate:not(:checked) > label:before {
+			content: '★ ';
+		}
+		.rate > input:checked ~ label {
+			color: #ffc700;    
+		}
+		.rate:not(:checked) > label:hover,
+		.rate:not(:checked) > label:hover ~ label {
+			color: #deb217;  
+		}
+		.rate > input:checked + label:hover,
+		.rate > input:checked + label:hover ~ label,
+		.rate > input:checked ~ label:hover,
+		.rate > input:checked ~ label:hover ~ label,
+		.rate > label:hover ~ input:checked ~ label {
+			color: #c59b08;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<a href="#home" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"><b style="color: red">ACTION!</b></a>
+			<!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+				<a href="#movies" class="w3-bar-item w3-button">Movies</a>
+				<a href="#about" class="w3-bar-item w3-button">About</a>
+				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1000px; margin-top: 40px;" id="home">
+		<img class="w3-image" src="WallpaperNT.jpg" alt="Home Wallpaper" width="1500" height="700">
+	</header>
+
+	<div class="w3-content w3-padding" style="max-width:1100px">
+		<div class="row" style="margin-left: 25px">
+			<div class="column side" style="font-size: 85%">
+				<h2><img class="sticky" src="PosterNT.jpg" alt="The Godfather" width="250" height="370"></h2>
+				<p style="font-size: 150%"><font color="red"><b>Thông tin phim</b></font></p>
+				<hr class="line">
+				<p><b>Rated:</b>&emsp;&emsp;&emsp;R </p>
+				<p><b>Thể loại:</b>&emsp;&nbsp; Phim tâm lý</p>
+				<p><b>Đạo diễn:</b>&emsp;&nbsp;Frank Darabont</p>
+				<table style="font-size: 102%"  cellspacing="0px">
+					<tr>
+						<td rowspan="15" style="vertical-align: top; font-weight: bold;">Diễn viên:</td>
+						<td>&emsp;Tim Robbins</td>
+					</tr>
+					<tr><td>&emsp;Morgan Freeman</td></tr>
+					<tr><td>&emsp;Bob Gunton</td></tr>
+					<tr><td>&emsp;William Sadler</td></tr>
+					<tr><td>&emsp;Clancy Brown</td></tr>
+					<tr><td>&emsp;Gil Bellows</td></tr>
+					<tr><td>&emsp;Mark Rolston</td></tr>
+					<tr><td>&emsp;James Whitmore</td></tr>
+					<tr><td>&emsp;Jeffrey DeMunn</td></tr>
+					<tr><td>&emsp;Larry Brandenburg</td></tr>
+					<tr><td>&emsp;Neil Giuntoli</td></tr>
+					<tr><td>&emsp;Brian Libby</td></tr>
+					<tr><td>&emsp;David Proval</td></tr>
+					<tr><td>&emsp;Joseph Ragno</td></tr>
+					<tr><td>&emsp;Jude Ciccolella</td></tr>
+				</table>
+				
+				<p><b>Khởi chiếu:</b>  14-10-1994 (USA)</p>
+				<p><b>Thời lượng:</b> 142 phút</p>
+			</div>
+
+			<div class="column middle">
+				<h2><b>The Shawshank Redemption</b></h2>
+				<p class="small" style="font-size: 120%">Nhà tù Shawshank	</p>
+				<div class="row">
+					<div class="column">
+						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0068646" data-style="p2">
+							<a href="https://www.imdb.com/title/tt0068646/?ref_=plg_rt_1">
+								<img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" The Godfather
+								(1972) on IMDb" />
+							</a>
+						</span>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>R</center></div>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>142'</center></div>
+					</div>
+				</div>
+				
+				<p class="small" style="font-size: 85%;"><i> Phim tâm lý</i></p>
+				<hr class="line">
+				<h1>5 bài học sâu sắc về cuộc đời từ bộ phim có điểm số cao nhất mọi thời đại trên IMDB</h1>
+				<p><b>"Áp lực và thời gian sẽ làm cho cho những bức tường trở nên dễ dàng xuyên thủng bởi một cái búa nhỏ. Nhưng với những thứ sinh ra để đứng vững thì thời gian chỉ làm cho nó trở nên vĩ đại hơn mà thôi".</b></p>
+
+				<p>The Shawshank Redemption (tạm dịch là Nhà tù Shawshank) do Frank Darabont viết kịch bản và đạo diễn, dựa trên tiểu thuyết của Stephen King - "Rita Hayworth and Shawshank Redemption". Các diễn viên chính trong phim là Tim Robbins trong vai Andy Dufresne và Morgan Freeman trong vai Ellis Boyd "Red" Redding. The Shawshank Redemption được mệnh danh là bộ phim hay nhất mọi thời đại, tính đến nay vẫn đứng thứ nhất trong top 100 phim điện ảnh với số điểm IMDB 9,3/10.</p>
+				<p>Và dưới đây là những bài học cuộc sống bạn có thể học được từ bộ phim này.</p>
+				<center><img src="Anh1.png" width="100%"></center>
+				<p>Với thế hệ hiện nay, đây là một bộ phim kinh điển nhưng vào thời điểm The Shawshank Redemption mới ra mắt, thật khó để hút khách tới rạp với một tiêu đề chẳng có chút gì hấp dẫn. Đề tài nhà tù vốn đã kén người xem, chưa kể đa phần thời lượng phim đều là thoại. Các đấng mày râu không mấy hào hứng trước viễn cảnh xem cuộc đời của những phạm nhân nam, trong khi phái nữ chẳng hề thoải mái trước một tác phẩm mà chỉ có đúng hai nhân vật nữ có lời thoại và cả hai đều xuất hiện rất chớp nhoáng.</p>
+				<center><img src="Anh2.png" width="100%"></center>
+				<p>Nhưng chính những điểm yếu ấy sau này lại khiến bộ phim trở nên nổi tiếng với khán giả bởi họ nhận ra chính trong nơi tối tăm ấy, một khúc ca bất hủ về tình bạn và hy vọng được vang lên. Shawshank là tên nhà tù nơi Andy Dufresne (Tim Robbins) thụ án chung thân do là nghi phạm duy nhất trong vụ án bắn chết vợ và tình nhân của ả.</p>
+				<p>Trong cái nhà tù mà “ai cũng đều vô tội” ấy, Andy làm bạn với những tù nhân khác, như ông già đưa sách Brooks (James Whitmore), tay Heywood (William Sadler) lắm mồm và cũng có không ít kẻ thù như nhóm của tên Bogs (Mark Rolston) bởi sự kiên nghị của mình. Nhưng nổi bật nhất vẫn là tình bạn của anh với Red (Morgan Freeman), một người tù chung thân có khả năng móc nối và tuồn những món đồ hiếm ở ngoài vào cho phạm nhân. Là hai kẻ xa lạ lúc đầu nhưng tình bạn của cả hai càng thêm bền chặt theo năm tháng với bao sự kiện xảy ra, để lại những ấn tượng khó phai cho những ai từng xem phim.</p>
+
+				<h3><b>1. Đừng bao giờ để mất hy vọng</b></h3>
+
+
+				<p>Hơn bốn thập kỉ thi hành án trong tù đã làm Red trở nên kiệt quệ, thứ duy nhất giữ ông sống sót trong nơi ngục tù tăm tối đó chính là hy vọng. Andy cũng vậy, anh luôn giữ được sự lạc quan khi bị ném vào xà lim dù mình vô tội, ngay cả khi bị hành hạ tàn nhẫn bởi tên cai tù tàn nhẫn Warden Norton và nhóm côn đồ "The Sister", niềm hy vọng vẫn tỏa sáng rực rỡ trong anh.</p>
+				<p>Hy vọng chính là nguồn động lực bất tận để Andy vượt ngục bằng...một chiếc búa. Việc không tưởng mà nhiều phạm nhân tin rằng "phải mất đến 600 năm mới làm được", trong khi Andy chỉ mất chưa đến 20 năm. Hy vọng cũng giúp Andy tìm thấy những người bạn thật sự trong tù - nơi mà sự chính trực và lòng tôn trọng dường như không tồn tại.</p>
+				<p>Cuối phim, Andy nhắn nhủ Red trong thư "<i>Hy vọng là một điều tốt, nhiều khi là điều tốt đẹp nhất. Mà những thứ tốt đẹp thì không bao giờ lụi tàn..</i>".</p>
+				<center><img src="Anh3.png" width="100%"></center>
+				
+				<h3><b>2. "<i>Get Busy Living or Get Busy Dying</i>"- Hoặc là một cuộc sống ồn ã, hoặc là một cái chết ồn ã</b></h3>
+				<p>Khi những con người vốn đã tuyệt vọng bị giam giữ ở một nơi cũng tuyệt vọng quá lâu, người ta khó có thể nghĩ đến cuộc sống tốt đẹp bên ngoài song sắt. Tuy nhiên, một số người dám đứng lên đấu tranh với số phận.</p>
+				
+				<p>Brooks Hatlen, một tù nhân già cả đã thụ án 50 năm và được ân xá. Ông lạc lõng trong thế giới tự do bên ngoài song sắt, Brooks không tìm thấy mục đích sống ở nơi phố thị xa hoa mà đã quá quen với sự u ám của ngục tù. Ông không chịu nổi và tự giải thoát bằng cách treo cổ tự vẫn. Trái lại, Andy không bao giờ chấp nhận để hoàn cảnh xô đẩy mình, anh luôn giữ bản thân bận rộn bằng những việc mang đến ý nghĩa cho cuộc sống bên trong trại cải tạo. Trước khi đào tẩu thành công, Andy đã truyền cho Red hy vọng và niềm tin để rồi một ông cũng có được cuộc sống tự do đúng nghĩa.</p>
+				<center><img src="Anh4.png" width="100%"></center>
+				
+				<h3><b>3. Hạnh phúc luôn đợi bạn phía cuối con đường</b></h3>
+
+				<p>"<i>Andy đã thoát ra ngoài bằng cách trườn mình qua ống cống dài gần 500 mét đầy phân hôi thối mà tôi không thể hình dung nổi. 500 mét, bằng chiều dài của 5 sân bóng</i>" - Red.</p>
+				<center><img src="Anh5.png" width="100%"></center>
+				<p>Đôi khi bạn cảm thấy mình cũng phải bò qua "<i>ống cống đầy phân hôi thối</i>" để có được những điều tốt đẹp. Cuộc sống không bao giờ là con đường trải đầy hoa hồng mà luôn chứa đựng những nguy hiểm rình rập, đòi hỏi ta phải thật kiên định mới vượt qua được. Andy không bao giờ bị những quy tắc tàn nhẫn của nhà tù khuất phục, mê cung bên trong Shawshank dần bị phá vỡ bởi cây búa nhỏ và tinh thần bất khuất của anh.</p>
+				<p>Câu chuyện đấy rất đúng với cuộc sống của chúng ta, ai cũng phải vấp ngã khi con đường không bằng phẳng. Khi đủ nhẫn nại vượt qua thử thách, cuộc sống này sẽ có ý nghĩa hơn rất nhiều.</p>
+
+				<h3><b>4. Giữ vững tâm trí ngay cả khi mọi thứ trở nên tồi tệ</b></h3>
+				<center><img src="Anh6.png" width="100%"></center>
+				<p>Khi mọi thứ trở nên khó khăn và có xu hướng chống lại bạn, hãy bình tĩnh và tìm cách sốc lại tinh thần mệt mỏi. Cố gắng giữ cho tâm trí bận rộn với việc gì đó có ý nghĩa cho bản thân và những người xung quanh.</p>
+				<p>Andy đã làm được rất nhiều điều có ích trong thời gian ngồi tù dài đằng đẵng: giúp quản lý thư viện, làm tờ khai hoàn thuế và cung cấp kế hoạch tài chính có lợi nhuận cho các sĩ quan cai ngục, viết thư xin tài trợ cho tu viện trong tù, dạy bạn tù Tommy Williams đọc chữ...Cuộc sống luôn trở nên ý nghĩa hơn với sự trung thực và nỗ lực không ngừng nghỉ, cho dù bạn đang trong bất cứ hoàn cảnh nào.</p>
+
+				<h3><b>5. Lợi dụng người khác sẽ dẫn đến vô số rắc rối</b></h3>
+				<center><img src="Anh7.png" width="100%"></center>
+				<p>Warden Samuel Norton - Giám đốc nhà tù Shawshank, lợi dụng sức lao động của tù nhân vào các công trình công cộng, trục lợi bằng cách cắt giảm chi phí của những người lao động có tay nghề và sử dụng Andy cho mục đích rửa tiền bằng bí danh "Randall Stephens". Sau khi đào thoát thành công, Andy mang theo tất cả tài liệu mật và đóng giả làm "Randall Stephens", rút tất cả số tiền mà anh kiếm được trong 19 năm tù.</p>
+				<p>Tiếp theo thông báo cho một tờ báo địa phương về tội tham những và giết người của Norton. Cuối cùng Norton không còn lựa chọn và tự sát trong văn phòng. Theo lời dẫn, Red cho rằng điều cuối cùng xuyên qua đầu Norton "không phải viên đạn, mà là làm thế quái nào mà Andy Dufresne có thể qua mặt được hắn".</p>
+				<p>Hãy suy nghĩ thật kỹ trước khi lợi dụng giá trị của một ai đó.</p>				
+
+			</div>
+
+			<div class="column side" class="line">
+				<p style="font-size: 100%">Đánh giá</p>
+				<div class="rate">
+					<input type="radio" id="star5" name="rate" value="5" />
+					<label for="star5" title="text">5 stars</label>
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4" title="text">4 stars</label>
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3" title="text">3 stars</label>
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2" title="text">2 stars</label>
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1" title="text">1 star</label>
+				</div>
+				<i><textarea rows="4" cols="23" name="comment" form="usrform">&ensp;Bình luận</textarea></i>
+				<br>
+				<button type="submit" form="nameform" value="Submit" style="width: 20%; margin-left: 170px">Gửi</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+	</script>
+</body>
+</html>

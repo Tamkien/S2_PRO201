@@ -1,0 +1,243 @@
+s<!DOCTYPE html>
+<html>
+<head>
+	<title>Titanic</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/ico" href="logo.png" />
+	<style>
+		p.small {
+			line-height: 0;
+		}
+
+		img.sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		/* Style the header */
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+
+		/* Middle column */
+		.column.middle {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}
+		}
+
+		hr.line {
+			border: 1px solid red;
+		}
+
+		.box {
+			width: 60px;
+			height: 25px;
+			border: 1px solid gray;
+			background-color: gray;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.rate {
+			float: left;
+			height: 46px;
+			padding: 0 10px;
+		}
+		.rate:not(:checked) > input {
+			position:absolute;
+			top:-9999px;
+		}
+		.rate:not(:checked) > label {
+			float:right;
+			width:1em;
+			overflow:hidden;
+			white-space:nowrap;
+			cursor:pointer;
+			font-size:30px;
+			color:#ccc;
+		}
+		.rate:not(:checked) > label:before {
+			content: '★ ';
+		}
+		.rate > input:checked ~ label {
+			color: #ffc700;    
+		}
+		.rate:not(:checked) > label:hover,
+		.rate:not(:checked) > label:hover ~ label {
+			color: #deb217;  
+		}
+		.rate > input:checked + label:hover,
+		.rate > input:checked + label:hover ~ label,
+		.rate > input:checked ~ label:hover,
+		.rate > input:checked ~ label:hover ~ label,
+		.rate > label:hover ~ input:checked ~ label {
+			color: #c59b08;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<a href="#home" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"><b style="color: red">ACTION!</b></a>
+			<!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+				<a href="#movies" class="w3-bar-item w3-button">Movies</a>
+				<a href="#about" class="w3-bar-item w3-button">About</a>
+				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1000px; margin-top: 40px;" id="home">
+		<img class="w3-image" src="WallpaperTTN.png" alt="Home Wallpaper" width="1500" height="700">
+	</header>
+
+	<div class="w3-content w3-padding" style="max-width:1100px">
+		<div class="row" style="margin-left: 25px">
+			<div class="column side" style="font-size: 80%">
+				<h2><img class="sticky" src="PosterTTN.jpg" alt="The Godfather" width="250" height="370"></h2>
+				<p style="font-size: 150%"><font color="red"><b>Thông tin phim</b></font></p>
+				<hr class="line">
+				<p><b>Rated:</b>&emsp;&emsp;&emsp;PG-13 </p>
+				<p><b>Thể loại:</b>&emsp;&ensp;&nbsp; Phim gia đình, Phim tình cảm</p>
+				<p><b>Đạo diễn:</b>&emsp;&nbsp;James Cameron</p>
+				<p><b>Diễn viên:</b>&emsp;Leonardo Dicaprio, Kate Winslet, Billy Zane</p>
+				<p><b>Khởi chiếu:</b>  19-12-1997 (USA)</p>
+				<p><b>Thời lượng:</b> 194 phút</p>
+			</div>
+
+			<div class="column middle">
+				<h2><b>Titanic</b></h2>
+				<p class="small" style="font-size: 120%">Chuyến Tàu Định Mệnh - Titanic	</p>
+				<div class="row">
+					<div class="column">
+						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0068646" data-style="p2">
+							<a href="https://www.imdb.com/title/tt0068646/?ref_=plg_rt_1">
+								<img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" The Godfather
+								(1972) on IMDb" />
+							</a>
+						</span>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>PG-13</center></div>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>194'</center></div>
+					</div>
+				</div>
+				
+				<p class="small" style="font-size: 85%;"><i> Phim gia đình, Phim tình cảm</i></p>
+				<hr class="line">
+				<b style="font-size: 20px">CẢM HỨNG TỪ NHỮNG CON TÀU ĐẮM</b>
+				<p>James Cameron (gọi tắt là Jim) từ lâu đã bị mê hoặc bởi các con tàu bị đắm, và đối với ông, thảm họa tàu Titanic (Tên chính thức của nó là RMS Titanic, RMS là viết tắt của Royal Mail Ship – Tàu chở bưu kiện hoàng gia) là đỉnh Everest của các con tàu bị đắm. Jim đã qua thời trai trẻ để có thể cân nhắc một chuyến thám hiểm dưới biển, nhưng khi xem một bộ phim IMAX được thực hiện từ các đoạn phim tư liệu về chính con tàu bị đắm này, ông quyết định tìm kiếm sự tài trợ của Hollywood, “không phải vì tôi đặc biệt muốn làm bộ phim này, mà vì tôi muốn lặn xuống nơi tàu bị đắm”. Cameron viết một kịch bản sơ bộ cho bộ phim nói về Titanic, và ví von nó là “Chuyện tình Rome và Juliet trên tàu Titanic”.</p>
+				<p>Cameron thuyết phục Hãng Fox quảng bá bộ phim ăn theo sự đình đám được tạo ra bởi việc quay xác tàu Titanic thật, và tổ chức một vài chuyến lặn xuống địa điểm đắm tàu trong thời gian hai năm. Ê kíp của ông quay tại nơi con tàu thật bị đắm ở Đại Tây Dương 11 lần vào năm 1995. Ở độ sâu đó, với áp suất nước là 2.724 kg mỗi 2,54 cm², “một vết nứt nhỏ trên tàu ngầm sẽ đồng nghĩa với cái chết ngay lập tức cho mọi người trên tàu”.</p>
+				<p>Sau khi bấm máy các cảnh ở xác con tàu bị đắm, Jim bắt đầu viết kịch bản. Ông muốn thể hiện sự kính trọng đối với những người đã chết trong vụ chìm tàu, vì thế ông bỏ ra 6 tháng để nghiên cứu toàn bộ thủy thủ đoàn và hành khách của tàu Titanic. “Tôi đọc mọi thứ mà tôi có thể đọc. Tôi tạo ra một dòng thời gian rất chi tiết của đêm cuối cùng của đời nó”.</p>
+				<b style="font-size: 20px">ĐẮT HƠN SỰ THẬT !</b>
+				<p>Harland and Wolff, hãng đóng tàu Titanic nguyên gốc, mở kho lưu trữ riêng của họ cho ê kíp làm phim xem, chia sẻ những bản thiết kế mà được cho là đã thất lạc. Đối với nội thất của con tàu, đội ngũ của nhà thiết kế sản xuất Peter Lamont tìm kiếm các đồ tạo tác của thời kỳ mà con tàu tồn tại. Tuy nhiên, trong lịch sử, con tàu đó mới được đóng, đang thực hiện chuyến hải hành đầu tiên (và cũng là lần cuối cùng), điều này đồng nghĩa với việc mọi đạo cụ đều phải được thực hiện từ con số không để cho thấy chúng mới toanh.	</p>
+				<p>Các bối cảnh trình bày các phòng ốc trên tàu Titanic được tái tạo chính xác như trên chiếc tàu nguyên gốc, tư liệu từ các bức ảnh và sơ đồ của hãng đóng tàu Titanic nguyên gốc. Cầu thang khoang hạng nhất của con tàu xuất hiện nổi bật trong kịch bản thì được xây dựng bằng gỗ thật và thực sự bị phá hủy trong khi bấm máy cảnh chìm tàu. Các căn phòng, thảm lót, kiểu dáng và màu sắc, từng đồ đạc, vật trang trí, ghế, ốp tường, dao kéo và bát đĩa có tiêu ngữ White Star Line trên mỗi cái, trang phục được thiết kế đúng với nguyên gốc… Cameron còn thuê hai sử gia Titanic, Don Lynch và Ken Marschall, để xác nhận chi tiết lịch sử trong bộ phim.</p>
+				<p>Với kinh phí lên đến 200 triệu USD – đắt nhất thế kỷ 20, bộ phim Titanic còn đắt hơn cả chính con tàu Titanic thật. Chi phí xây dựng con tàu này vào năm 1910-1912 là 1,5 triệu bảng Anh, tương đương 7,5 triệu USD vào thời đó và khoảng 120 tới 150 triệu USD theo giá đô-la năm 1997.</p>
+				<b style="font-size: 20px">GÃ ĐÀN ÔNG ĐÁNG SỢ NHẤT HOLLYWOOD</b>
+				<p>Quá trình quay là một trải nghiệm gian khổ khiến Jim càng được biết đến như là “người đàn ông đáng sợ nhất ở Hollywood”. Ai cũng ngán ông là một người cầu toàn, khắt khe, và không nhân nhượng”, “người hét to đạt tới cường độ âm thanh 300 decibel, sử dụng một cái loa và một chiếc điện đài xách tay, hét vào mặt mọi người từ một cần cẩu cao gần 50 mét”. Diễn viên nữ chính Kate Winslet nhớ lại: “Có những lúc tôi thật sự sợ hãi ông. Jim có tính khí mà bạn không thể tưởng tượng nổi”, cô kể.</p>
+				<p>Lịch bấm máy được dự định kéo dài 138 ngày nhưng tăng lên thành 160 ngày. 3 diễn viên đóng thế bị gãy xương. Kate Winslet cũng bị nứt xương ở khuỷu tay khi đóng bộ phim, và còn lo rằng cô sẽ bị chết chìm trong bể nước chứa 64.260.000 lít nước đó. Nhiều diễn viên bị cảm lạnh, cúm, hoặc viêm thận sau khi trải qua nhiều giờ đồng hồ trong nước lạnh, kể cả Winslet. Cuối cùng, cô quyết định mình sẽ không làm việc với Cameron nữa trừ khi kiếm được thật nhiều tiền”.</p>
+				<p>Phản ứng với mọi sự chỉ trích, Cameron cho biết, “làm phim giống như đánh giặc. Một trận đánh lớn giữa thương mại và thẩm mỹ”. Ông tin vào phong cách làm việc đầy nhiệt tình và không bao giờ xin lỗi ai về cách ông chỉ đạo trên phim trường…</p>
+				<p>Thế rồi một chuyện chưa từng có trong điện ảnh đã xảy ra khi quay trên tàu thám hiểm của Nga Akademik Mstislav Keldysh, bối cảnh hiện tại. Một thành viên trong ê kíp đã giận dữ và bỏ thuốc gây ảo giác vào món súp mà Cameron và nhiều người khác ăn, khiến hơn 50 người phải nhập viện. Cameron kịp ói ra trước khi thuốc ngấm hoàn toàn. Abernathy bị sốc khi nhìn thấy vẻ mặt của ông. “Một con mắt đỏ lòm, giống con mắt của kẻ hủy diệt Terminator. Một con ngươi, không tròng đen, đỏ ửng. Con mắt còn lại trông như thể ông đã hít ma túy từ lúc 4 tuổi”… Người đứng đằng sau vụ đầu độc đó không bao giờ bị tóm!</p>
+				<p>Với thuộc hạ là thế, còn với các ông chủ, Cameron cũng chẳng vừa. Khi kinh phí sản xuất cứ tăng lên vùn vụt và cuối cùng vươn tới mốc 200 triệu USD, các nhà điều hành của Hãng Fox thực sự lo lắng, và đề nghị cắt một tiếng đồng hồ ra khỏi bộ phim dài đến 3 tiếng 14 phút. Họ lập luận thời lượng quá dài sẽ đồng nghĩa buổi chiếu ít hơn, như thế tiền thu được cũng sẽ ít hơn. Cameron điên lên: “Quý vị muốn cắt bớt bộ phim của tôi à? Vậy thì quý vị phải sa thải tôi thôi! Quý vị muốn sa thải tôi à? Vậy thì quý vị phải giết tôi thôi!”. Hãng Fox đành phải nhượng bộ, vì nếu làm căng sẽ đồng nghĩa với việc họ mất hết toàn bộ tiền đầu tư!</p>
+				<b style="font-size: 20px">TITANIC KHÔNG THỂ CHÌM</b>
+				<p>Trước khi bộ phim được phát hành, tất cả mọi người đều dự đoán Titanic sẽ là một thảm họa phòng vé khủng khiếp nhất trong lịch sử điện ảnh, bởi mọi thứ liên quan đến nó đều vượt quá ngưỡng cho phép để trở thành bộ phim tốn kém nhất được thực hiện vào thời đó. Một nhà phê bình phim của tờ Los Angeles Times viết rằng “Sự kiêu căng quá mức của Cameron sắp đánh đắm cả dự án này” và rằng bộ phim “hoàn toàn là một bản sao đã quá phổ biến của chủ nghĩa lãng mạn xa xưa ở Hollywood”.</p>
+				<p>Nhưng toàn thế giới điện ảnh đã sửng sốt khi bộ phim gặt hái thành công với doanh thu cao chưa từng thấy. Nó được khen là “câu chuyện tình chiếm trái tim của thế giới”. Khán giả đứng dậy sau khi xem xong, nước mắt hằn trên mặt và cảm xúc như chết lặng vì kinh ngạc còn trái tim thì thổn thức. Bộ phim được chiếu tại 3.200 rạp ở Mỹ trong 10 tuần đầu và trong số 15 tuần liên tiếp đứng đầu các bảng xếp hạng, tổng doanh thu của nó tăng đột biến 43% trong tuần phát hành thứ chín. Trong 10 tuần đầu, mỗi tuần nó kiếm hơn 20 triệu USD, và sau tuần chiếu thứ 14, mỗi tuần nó vẫn mang về hơn 1 triệu USD… cứ thế băng băng về đích với doanh thu toàn cầu 1,8 tỷ USD!</p>
+				<b style="font-size: 20px">NHỮNG KỶ LỤC</b>
+				<p>Bộ phim đứng đầu về doanh thu phòng vé trong mười lăm tuần liên tiếp ở Bắc Mỹ, đây vẫn là một kỷ lục chưa phim nào phá được cho tới nay.</p>
+				<p>Thời gian bộ phim được chiếu tại các rạp Bắc Mỹ lên đến gần mười tháng, trước khi kết thúc hoàn toàn vào thứ năm, 1 tháng 10 năm 1998 với tổng doanh thu nội địa (ở Mỹ) cuối cùng là 600.788.188 USD. Riêng tại Thụy Điển, thời gian bộ phim tồn tại ở rạp là 18 tháng.</p>
+				<p>Mặc dù sau này Avatar có thể đánh bại Titanic về kỷ lục doanh thu, nhưng bộ phim khó có khả năng vượt Titanic về lượng khán giả tới rạp. “Giá vé xem phim vào thời điểm cuối thập niên 1990 rẻ hơn hiện nay khoảng 3 USD.</p>
+				<p>Bộ phim tổng cộng giành gần chín mươi giải thưởng ( trong đó có 11 giải Oscar ) cùng với bốn mươi bảy đề cử từ nhiều hội đồng trao giải trên toàn thế giới. Ngoài ra, cuốn sách viết về hậu trường làm phim còn đứng đầu danh sách bán chạy nhất của báo The New York Times trong nhiều tuần, “lần đầu tiên một cuốn sách viết về một tác phẩm điện ảnh giành được vị trí cao như vậy.</p>
+				<p>Ngày xưa khi con tàu Titanic hạ thủy, nó đã được mệnh danh là không thể chìm (Unsinkable). Còn phim Titanic khi ra rạp lại bị dự đoán là sẽ chết chìm thê thảm (Sinkable). Định mệnh đã đảo ngược hoàn toàn.</p>
+
+			</div>
+
+			<div class="column side" class="line">
+				<p style="font-size: 100%">Đánh giá</p>
+				<div class="rate">
+					<input type="radio" id="star5" name="rate" value="5" />
+					<label for="star5" title="text">5 stars</label>
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4" title="text">4 stars</label>
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3" title="text">3 stars</label>
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2" title="text">2 stars</label>
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1" title="text">1 star</label>
+				</div>
+				<i><textarea rows="4" cols="23" name="comment" form="usrform">&ensp;Bình luận</textarea></i>
+				<br>
+				<button type="submit" form="nameform" value="Submit" style="width: 20%; margin-left: 170px">Gửi</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+	</script>
+</body>
+</html>

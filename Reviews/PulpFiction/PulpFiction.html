@@ -1,0 +1,268 @@
+s<!DOCTYPE html>
+<html>
+<head>
+	<title>PulpFiction</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/ico" href="logo.png" />
+	<style>
+		p.small {
+			line-height: 0;
+		}
+
+		img.sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		/* Style the header */
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+
+		/* Middle column */
+		.column.middle {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}
+		}
+
+		hr.line {
+			border: 1px solid red;
+		}
+
+		.box {
+			width: 60px;
+			height: 25px;
+			border: 1px solid gray;
+			background-color: gray;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.rate {
+			float: left;
+			height: 46px;
+			padding: 0 10px;
+		}
+		.rate:not(:checked) > input {
+			position:absolute;
+			top:-9999px;
+		}
+		.rate:not(:checked) > label {
+			float:right;
+			width:1em;
+			overflow:hidden;
+			white-space:nowrap;
+			cursor:pointer;
+			font-size:30px;
+			color:#ccc;
+		}
+		.rate:not(:checked) > label:before {
+			content: '★ ';
+		}
+		.rate > input:checked ~ label {
+			color: #ffc700;    
+		}
+		.rate:not(:checked) > label:hover,
+		.rate:not(:checked) > label:hover ~ label {
+			color: #deb217;  
+		}
+		.rate > input:checked + label:hover,
+		.rate > input:checked + label:hover ~ label,
+		.rate > input:checked ~ label:hover,
+		.rate > input:checked ~ label:hover ~ label,
+		.rate > label:hover ~ input:checked ~ label {
+			color: #c59b08;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<a href="#home" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"><b style="color: red">ACTION!</b></a>
+			<!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+				<a href="#movies" class="w3-bar-item w3-button">Movies</a>
+				<a href="#about" class="w3-bar-item w3-button">About</a>
+				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1000px; margin-top: 40px;" id="home">
+		<img class="w3-image" src="WallPaperPulpFiction.jpg" alt="Home Wallpaper" width="1500" height="700">
+	</header>
+
+	<div class="w3-content w3-padding" style="max-width:1100px">
+		<div class="row" style="margin-left: 25px">
+			<div class="column side" style="font-size: 85%">
+				<h2><img class="sticky" src="PosterPF.jpeg" alt="The Godfather" width="250" height="370"></h2>
+				<p style="font-size: 150%"><font color="red"><b>Thông tin phim</b></font></p>
+				<hr class="line">
+				<p><b>Rated:</b>&emsp;&emsp;&emsp;R </p>
+				<p><b>Thể loại:</b>&emsp;&ensp;&nbsp; Phim tâm lý, tội phạm</p>
+				<p><b>Đạo diễn:</b>&emsp;&nbsp;Quentin Tarantino</p>
+				<table style="font-size: 102%"  cellspacing="0px">
+					<tr>
+						<td rowspan="15" style="vertical-align: top; font-weight: bold;">Diễn viên:</td>
+						<td>&emsp;Tim Roth</td>
+					</tr>
+					<tr><td>&emsp;Amanda Plummer</td></tr>
+					<tr><td>&emsp;Laura Lovelace</td></tr>
+					<tr><td>&emsp;John Travolta</td></tr>
+					<tr><td>&emsp;Samuel L.Jackson</td></tr>
+					<tr><td>&emsp;Phil LaMar</td></tr>
+					<tr><td>&emsp;Frank Whaley</td></tr>
+					<tr><td>&emsp;Burr Steers</td></tr>
+					<tr><td>&emsp;Bruce Willis</td></tr>
+					<tr><td>&emsp;Ving Rahmes</td></tr>
+					<tr><td>&emsp;Paul Calderon</td></tr>
+					<tr><td>&emsp;Bronagh Gallagher</td></tr>
+					<tr><td>&emsp;Rosanna Arquette</td></tr>
+					<tr><td>&emsp;Eric Slotsz</td></tr>
+					<tr><td>&emsp;Uma Thurman</td></tr>
+				</table>
+				
+				<p><b>Khởi chiếu:</b>  14-10-1994 (USA)</p>
+				<p><b>Thời lượng:</b> 154 phút</p>
+			</div>
+
+			<div class="column middle">
+				<h2><b>Pulp Fiction</b></h2>
+				<p class="small" style="font-size: 120%">Chuyện tào lao	</p>
+				<div class="row">
+					<div class="column">
+						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0068646" data-style="p2">
+							<a href="https://www.imdb.com/title/tt0068646/?ref_=plg_rt_1">
+								<img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" The Godfather
+								(1972) on IMDb" />
+							</a>
+						</span>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>R</center></div>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>154'</center></div>
+					</div>
+				</div>
+				
+				<p class="small" style="font-size: 85%;"><i> Phim tâm lý, tội phạm</i></p>
+				<hr class="line">
+				<h1>'Pulp Fiction' - 'chuyện tào lao' lôi cuốn của Quentin Tarantino</h1>
+				<p><b>"Pulp fiction" xoay quanh chuyện tưởng như tầm phào của các nhân vật trong phim nhưng gặt hái thành công vang dội nhờ cách kể mới lạ, lời thoại thú vị và thể hiện tuyệt vời của các diễn viên.</b></p>
+				<p>Thập niên 1990 đánh dấu nhiều cột mốc khó phai của lịch sử điện ảnh thế giới. Jurrasic Park là kỳ quan về kỹ xảo, Shawshank Redemption trở thành kiệt tác đi cùng năm tháng còn Titanic phá vỡ kỷ lục phòng vé. Nhưng nếu chọn ra phim có sức ảnh hưởng nhất, đó có lẽ là Pulp Fiction (Chuyện tào lao), một sản phẩm mang tính cách mạng của "quái kiệt" Quentin Tarantino.</p>
+				<h3><b>Bộ phim "Ba trong một"</b></h3>
+				<p>Cách kể chuyện của Pulp Fiction khác với bất cứ bộ phim nào được làm ra trước nó khi câu chuyện không hề tuân theo trình tự thời gian thường thấy. Thay vì đưa khán giả đi từ A tới Z, Quentin Tarantino tự mình xáo trộn “bảng chữ cái” và để khán giả vừa xem vừa tự sắp xếp lại chúng.</p>
+				<center><img src="PosterPF.png" width="75%"></center>
+				<p>Nội dung phim cũng thú vị như cách kể, khi có tới ba "phim nhỏ" khác nằm trong nó, với những nhân vật khác nhau. Từ đó Pulp Fiction được chia thành bảy chương nhỏ.</p>
+				<p>Ở phim nhỏ đầu tiên, nhân vật chính là Vincent Vega (John Travolta thủ vai), gã gangster được ông trùm Marcellus Wallace (Ving Rhames) giao trách nhiệm dẫn vợ đi chơi trong lúc ông vắng nhà. Vợ Marcellus - Mia (Uma Thurman) - là cô ả luôn muốn thể hiện uy quyền, sự quyến rũ, khiến Vincent có một đêm nhớ đời.</p>
+				<p>Trong câu chuyện thứ hai mang tên "Chiếc đồng hồ vàng", người xem làm quen với võ sĩ Quyền Anh Butch (Bruce Willis), một kẻ nhận lời gian lận khi thượng đài theo lệnh của Marcellus Wallace. Tuy nhiên trong cơn say đòn, hắn vô tình đấm chết đối thủ và buộc phải tẩu thoát. Trên đường chạy trốn, Butch nhớ ra mình bỏ quên ở căn hộ cũ chiếc đồng hồ vàng, kỷ vật duy nhất mà người cha cựu chiến binh để lại. Butch mạo hiểm quay trở lại nhà mình, dù biết chắc tay chân của Wallace đang chờ để "xử đẹp" Butch.</p>
+				<p>Phần cuối cùng là "Tình huống Bonnie", với phần diễn xuất và thoại hay bậc nhất lịch sử Hollywood của Samuel L. Jackson. Ngôi sao da màu này vào vai tên gangster sùng đạo Jules, cùng Vincent Vega đi đòi lại chiếc vali cho Marcellus Wallace. Trong lúc thực hiện nhiệm vụ, súng đã cướp cò khiến một con nợ chết trên xe và buộc chúng phải giải quyết tình huống này sớm tại nhà người bạn Jimmie (do chính Tarantino thủ vai) trước khi vợ anh này là Bonnie đi làm về.</p>
+				<p>Pulp Fiction có thể tóm gọn như vậy. Nhưng muốn thực sự cảm nhận được phim thì cần phải xem trực tiếp, để nếm món cocktail hoàn hảo mà Tarantino pha trộn.</p>
+				<h3><b>Những nhân vật cá tính</b></h3>
+				<p>Phim của Tarantino có điểm chung là rất bạo lực và có những nhân vật "không thể nào quên" nhờ cá tính lẫn diễn xuất của người thể hiện. Ở hai phần Kill Bill, người xem nể phục võ nghệ của nhân vật Cô Dâu. Trong Inglorious Basterds, tên đại tá "săn Do Thái" Hans Landa để lại dấu ấn bởi đầu óc xảo quyệt. Và gần nhất, Django Unchained có tên chủ đồn điền Candie tàn ác.</p>
+				<center><img src="CanhTrongPhim.png" width="100%"></center>
+				<p>Còn Pulp Fiction được xem như một trong những phim hay nhất mọi thời bởi nhân vật trong tác phẩm đều có nét riêng đặc sắc. Nổi bật nhất là tên đồ tể sùng đạo Jules Winnfield của Samuel L. Jackson. Dù thời lượng có mặt không nhiều, nhân vật này khiến khán giả bất ngờ bởi khả năng biến hóa. Lúc trò truyện với Vincent, Jules giống người bạn ta bắt gặp hàng ngày chốn công sở: hài hước, thoải mái trò truyện về đời sống riêng tư. Nhưng khi bắt tay vào công việc, hắn làm người xung quanh run sợ bởi ánh mắt sáng quắc, miệng gằn từng tiếng trong vẻ hung bạo như thể một ngọn núi lửa chực phun trào.</p>
+				<p>Khi nhân vật này mở miệng, khán giả lắng nghe như muốn nuốt từng từ, bởi tên gangster này có những cách ví von văn vẻ. Jules tự thú với Vincent: "Tao đã nói cái thứ này bao năm nay mà chẳng quan tâm ý nghĩa thực sự của nó ra sao. Tao chỉ nói bởi nó có vẻ rất hay ho". Trường đoạn Jules trích dẫn đoạn Ezekiel trong Kinh Thánh khi đi đòi nợ được xem là một trong những cảnh kinh điển nhất lịch sử phim ảnh.</p>
+				<p>Với vai diễn ấy, Jackson nhận đề cử Oscar cho Nam diễn viên phụ xuất sắc và anh không phải người duy nhất trong đoàn làm phim có được vinh dự ấy. Vốn nổi tiếng với những phim ca nhạc thập niên 1970, sự nghiệp của tài tử John Travolta có lẽ đã chìm nghỉm nếu không tham gia Pulp Fiction. John Travolta cũng được đề cử một Oscar cho diễn xuất trong phim.</p>
+				<p>Ngoài ra, Uma Thurman được đề cử Oscar với vai ả Mia và trở thành "nàng thơ" sau này của Tarantino. Còn Bruce Willis cũng được ghi nhận về khả năng diễn xuất chứ không phải một gã vai u thịt bắp chỉ có thể đóng phim hành động như Die Hard. Ngay cả những nhân vật phụ như "chuyên gia dọn dẹp" Wolf (Harvey Keitel) hay hai tên cướp nhà hàng ở đầu lẫn cuối phim cũng có chỗ đứng trong lòng khán giả. Diễn viên tệ nhất phim có lẽ là ... Tarantino, khi ông đóng vai nhỏ Jimmie.</p>
+				<h3><b>Kỳ tích của "quái kiệt" Tarantino</b></h3>
+				<p>Đạo diễn Tarantino sinh năm 1963. Ông bỏ học năm 16 tuổi và nuôi mộng thành diễn viên bằng cách theo học một khóa diễn xuất. Nhưng sau hai năm, Tarantino chán nản rồi đi làm nhân viên tại tiệm cho thuê video nằm ở khu Manhattan. Đây chính là "ngôi trường điện ảnh" sinh động nhất của Taratino, vì ông được thoải mái xem hàng nghìn bộ phim đủ mọi thể loại, từ đó chịu ảnh hưởng của những đạo diễn bậc thầy như Martin Scorsese, Sergio Leone hay Gerardo de Leon... Không những xem phim miễn phí, ông còn dành hàng giờ để trò truyện với những người tới thuê băng về phim ảnh và theo dõi kỹ khách hàng thường xem thể loại phim nào. Nhờ đó, Tarantino trở thành "pho từ điển sống" của môn nghệ thuật thứ bảy cũng như hiểu tường tận khán giả muốn được thấy gì ở một bộ phim. Ông từng nói: "Tôi chưa từng học về điện ảnh mà tôi sống trong nó".</p>
+				<center><img src="DaoDien.png" width="100%"></center>
+				<p>Vốn kiến thức ấy được Tarantino áp dụng triệt để vào phim đầu tay Reservoir Dogs (năm 1992). Phim kể câu chuyện về một nhóm cướp với phong cách độc đáo, bạo lực mà vẫn rất hài hước. Phim nhanh chóng trở thành hiện tượng. Hai năm sau Reservoir Dogs, Pulp Fiction ra đời, đưa Tarantino lên tầm cao mới. Tác phẩm đoạt Cành cọ Vàng tại LHP Cannes và nhận được vô số lời khen ngợi từ giới phê bình.</p>
+				<p>Ở Quentin Tarantino, Hollywood nhìn thấy sự đổi mới mang tính cách mạng mà Orson Welles từng làm được với Citizen Kane (1941) hay Steven Spielberg với những phim bom tấn thập niên 70-80 thế kỷ trước. Tự viết kịch bản và làm phim theo đúng ý mình, Tarantino thỏa sức đưa những thể loại ông ưa thích lên màn ảnh, tiêu biểu là "nồi lẩu thập cẩm" Pulp Fiction.</p>
+				<p>Hài hước, hành động, rùng rợn, tình cảm... tất cả đều có trong "nồi lẩu" Pulp Fiction. "Bếp trưởng" Tarantino khéo léo kết hợp hương vị của từng nguyên liệu điện ảnh vào "nồi lẩu" ấy và làm hài lòng mọi thực khách. Ở Pulp Fiction, người xem thấy võ sĩ Quyền Anh chiến đấu bằng kiếm katana, gặp tên sát thủ bình thản trích dẫn Kinh Thánh trước khi giết người không gớm tay... Những câu thoại trong phim vừa tinh tế, vừa hài hước. Và trên tất cả là cách kể chuyện "phi tuyến tính", làm người xem bị cuốn hút ngay từ những phút giây đầu tiên.</p>
+				<p>Tarantino từng lẫn vào dòng người tại rạp chiếu phim để xem Pulp Fiction cùng khán giả và vui mừng khi thấy người xem "dán mắt vào màn hình và tập trung cao độ" để khỏi lỡ những tình tiết hay. Bằng một cách nào đó, những nhân vật trong ba câu chuyện tưởng như riêng rẽ lại có liên hệ mật thiết rồi gặp nhau trong giao lộ cuộc đời, tạo nên câu chuyện hoàn chỉnh của Pulp Fiction.</p>
+				<p>Trong khuôn khổ của từ ngữ, thật khó có thể diễn tả hết sự phong phú của kịch bản, sự hài hước rất tếu táo trong từng câu thoại lẫn sự thông minh trong cách kể chuyện của "quái kiệt" Tarantino. Các nhà phê bình tranh luận đây là phim hài, phim gangster, phim noir thể loại mới nhưng với khán giả thì đơn giản, họ được thưởng thức một bộ phim vừa giàu tính điện ảnh, vừa rất đời, có thể xem lại nhiều lần mà cảm giác vẫn như mới.</p>
+				<p>Tarantino làm thay đổi bộ mặt của dòng phim độc lập. Có kinh phí 8,5 triệu USD, Pulp Fiction mang về tới 213 triệu USD trên toàn cầu, đoạt Cành cọ vàng, chiến thắng ở hạng mục Kịch bản hay nhất trong các giải Quả cầu Vàng, Oscar. Các tạp chí Times, Empire hay nhà phê bình quá cố Roger Elbert đều nhất trí đây là phim giàu sức ảnh hưởng nhất thập niên 1990. Cách xây dựng nhân vật cá tính, những câu thoại thông minh hóm hỉnh cùng cách kể chuyện độc đáo đưa Pulp Fiction trở thành phim kinh điển.</p>
+				<p>Khi đọc một cuốn sách hay, độc giả không bao giờ muốn sách kết thúc và khi đọc lại, người xem vẫn thấy mới mẻ, thích thú. Pulp Fiction là cuốn sách hay ấy trong kho tàng điện ảnh mà người hâm mộ nghệ thuật thứ bảy, đặc biệt là cánh đàn ông, không thể bỏ qua.</p>
+
+			</div>
+
+			<div class="column side" class="line">
+				<p style="font-size: 100%">Đánh giá</p>
+				<div class="rate">
+					<input type="radio" id="star5" name="rate" value="5" />
+					<label for="star5" title="text">5 stars</label>
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4" title="text">4 stars</label>
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3" title="text">3 stars</label>
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2" title="text">2 stars</label>
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1" title="text">1 star</label>
+				</div>
+				<i><textarea rows="4" cols="23" name="comment" form="usrform">&ensp;Bình luận</textarea></i>
+				<br>
+				<button type="submit" form="nameform" value="Submit" style="width: 20%; margin-left: 170px">Gửi</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+	</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+s<!DOCTYPE html>
+<html>
+<head>
+	<title>EndGame</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/ico" href="logo.png" />
+	<style>
+		p.small {
+			line-height: 0;
+		}
+
+		img.sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		/* Style the header */
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+
+		/* Middle column */
+		.column.middle {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}
+		}
+
+		hr.line {
+			border: 1px solid red;
+		}
+
+		.box {
+			width: 60px;
+			height: 25px;
+			border: 1px solid gray;
+			background-color: gray;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.rate {
+			float: left;
+			height: 46px;
+			padding: 0 10px;
+		}
+		.rate:not(:checked) > input {
+			position:absolute;
+			top:-9999px;
+		}
+		.rate:not(:checked) > label {
+			float:right;
+			width:1em;
+			overflow:hidden;
+			white-space:nowrap;
+			cursor:pointer;
+			font-size:30px;
+			color:#ccc;
+		}
+		.rate:not(:checked) > label:before {
+			content: '★ ';
+		}
+		.rate > input:checked ~ label {
+			color: #ffc700;    
+		}
+		.rate:not(:checked) > label:hover,
+		.rate:not(:checked) > label:hover ~ label {
+			color: #deb217;  
+		}
+		.rate > input:checked + label:hover,
+		.rate > input:checked + label:hover ~ label,
+		.rate > input:checked ~ label:hover,
+		.rate > input:checked ~ label:hover ~ label,
+		.rate > label:hover ~ input:checked ~ label {
+			color: #c59b08;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<a href="#home" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"><b style="color: red">ACTION!</b></a>
+			<!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+				<a href="#movies" class="w3-bar-item w3-button">Movies</a>
+				<a href="#about" class="w3-bar-item w3-button">About</a>
+				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1000px; margin-top: 40px;" id="home">
+		<img class="w3-image" src="WallpaperEG.jpg" alt="Home Wallpaper" width="1500" height="700">
+	</header>
+
+	<div class="w3-content w3-padding" style="max-width:1100px">
+		<div class="row" style="margin-left: 25px">
+			<div class="column side" style="font-size: 85%">
+				<h2><img class="sticky" src="PosterEG.jpg" alt="The Godfather" width="250" height="370"></h2>
+				<p style="font-size: 150%"><font color="red"><b>Thông tin phim</b></font></p>
+				<hr class="line">
+				<p><b>Rated:</b>&emsp;&emsp;&emsp;C13  </p>
+				<p><b>Thể loại:</b>&emsp;&nbsp; Phim hành động, phiêu lưu, siêu anh hùng</p>
+				<p><b>Đạo diễn:</b>&emsp;&nbsp;Anthony Russo, Joe Russo</p>
+				<table style="font-size: 102%"  cellspacing="0px">
+					<tr>
+						<td rowspan="15" style="vertical-align: top; font-weight: bold;">Diễn viên:</td>
+						<td>&emsp;Robert Downey Jr.</td>
+					</tr>
+					<tr><td>&emsp;Chris Evans</td></tr>
+					<tr><td>&emsp;Mark Ruffalo</td></tr>
+					<tr><td>&emsp;Chris Hemsworth</td></tr>
+					<tr><td>&emsp;Scarlett Johansson</td></tr>
+					<tr><td>&emsp;Jeremy Renner</td></tr>
+					<tr><td>&emsp;Don Cheadle</td></tr>
+					<tr><td>&emsp;Paul Rudd</td></tr>
+					<tr><td>&emsp;Benedict Cumberbatch</td></tr>
+					<tr><td>&emsp;Chadwick Boseman</td></tr>
+					<tr><td>&emsp;Brie Larson</td></tr>
+					<tr><td>&emsp;Tom Holland	</td></tr>
+					<tr><td>&emsp;Karen Gillan</td></tr>
+					<tr><td>&emsp;Zoe Saldana</td></tr>
+					<tr><td>&emsp;Evangeline Lilly</td></tr>
+				</table>
+				
+				<p><b>Khởi chiếu:</b>  26-04-2019 (Vietnam)</p>
+				<p><b>Thời lượng:</b> 181 phút</p>
+			</div>
+
+			<div class="column middle">
+				<h2><b>Avengers: Endgame</b></h2>
+				<p class="small" style="font-size: 120%">Avengers: Hồi kết	</p>
+				<div class="row">
+					<div class="column">
+						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0068646" data-style="p2">
+							<a href="https://www.imdb.com/title/tt0068646/?ref_=plg_rt_1">
+								<img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" The Godfather
+								(1972) on IMDb" />
+							</a>
+						</span>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>C13 </center></div>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>181'</center></div>
+					</div>
+				</div>
+				
+				<p class="small" style="font-size: 85%;"><i> Phim hành động, phiêu lưu, siêu anh hùng</i></p>
+				<hr class="line">
+				<h1>Avengers: Endgame <br> Hồi kết mãn nhãn đầu tiên của đế chế MCU</h1>
+				
+				<p><b>“Avengers: Endgame” là phần kết mỹ mãn cho chuyến hành trình đầu tiên kéo dài hơn 10 năm của MCU, với câu chuyện hấp dẫn, giàu cảm xúc, và hàng loạt mối kết nối chặt chẽ.</b></p>
+
+				<p>Trải dài hơn một thập kỷ, với hơn 20 tác phẩm đã ra mắt trên màn ảnh rộng, Vũ trụ Điện ảnh Marvel (MCU) thực sự trở thành đế chế vững mạnh với lượng khán giả hâm mộ hùng hậu trên toàn cầu, thu được nhiều thành công lớn về cả doanh thu lẫn chất lượng nghệ thuật.</p>
+				<p>Tuy vẫn tiếp tục duy trì kế hoạch dài hơi chặt chẽ, bài bản trong tương lai, nhưng giai đoạn đầu của MCU - vốn gắn liền với biệt đội siêu anh hùng Avengers thế hệ đầu tiên - giờ đã bước vào thời điểm kết thúc.</p>
+				<p>Mở đầu cho kết thúc đó chính là cuộc chiến định mệnh giữa nhóm Avengers và đại ác nhân Thanos trong Avengers: Infinity War (2018). Kết thúc bộ phim, Thanos là kẻ thắng khi các siêu anh hùng thất bại trong việc ngăn chặn hắn sử dụng các viên Đá Vô cực để xóa sổ một nửa sinh linh trong vũ trụ.</p>
+				<p>Năm nay với Avengers: Endgame, khán giả được chứng kiến nỗ lực cuối cùng của biệt đội Avengers nhằm “báo thù” cho bi kịch xảy ra ở tập trước.</p>
+				<p>Không chỉ là hồi kết cho chuyến hành trình đầu tiên kéo dài hơn một thập kỷ của MCU, bộ phim còn hứa hẹn hé lộ tương lai của nhiều siêu anh hùng kỳ cựu từng gắn bó và được khán giả yêu mến suốt nhiều năm qua.</p>
+				<h3><b>Cốt truyện hấp dẫn, bất ngờ và liên kết chặt chẽ</b></h3>
+
+				<p>Avengers: Endgame diễn ra ngay sau các sự kiện của Avengers: Infinity War. Sau khi xóa sổ một nửa sinh linh trong vũ trụ, ác nhân Thanos (Josh Brolin) biến mất cùng Đá Vô cực, bỏ lại phía sau những thế giới hoang tàn, đổ nát.</p>
+				<p>Các siêu anh hùng còn tồn tại sau cú búng tay định mệnh cùng nhau hỗ trợ duy trì trật tự trái đất, đồng thời tìm cách phục hồi mất mát. Một ngày nọ, tưởng như tất cả đã buông bỏ, thì một diễn biến bất ngờ xảy ra, gợi mở hy vọng mới cho toàn bộ nhân loại và vũ trụ.</p>
+				<p>Sau những bi kịch xảy ra ở phần trước, khán giả rất nóng lòng chờ đợi xem liệu nhóm Avengers sẽ làm thế nào để lật ngược thế cờ. Thêm đó, việc thông tin về nội dung phim bị hạn chế tiết lộ khiến kỳ vọng càng dâng cao. May mắn thay, Avengers: Endgame hoàn toàn không khiến người xem thất vọng.</p>
+				<center><img src="Anh1.png" width="100%"></center>
+				<p>Bộ phim sở hữu câu chuyện hấp dẫn, với những ý tưởng chủ đạo không quá mới mẻ, nhưng đủ hiệu quả và tạo ra hiệu ứng kích thích khi được đặt vào bối cảnh tác phẩm.</p>
+				<p>Lần này, thay vì lao vào những trận ác chiến dày đặc nhằm ngăn chặn Thanos cùng quân đoàn của hắn, nhóm người hùng chủ động dấn thân vào những chuyến phiêu lưu mới, nhằm giải cứu vũ trụ khỏi bi kịch đã xảy ra.</p>
+				<p>Hành trình của các siêu anh hùng trong Avengers: Endgame được xây dựng tương đối cụ thể, bài bản, theo cấu trúc ba hồi truyền thống. Không còn đặt nặng tính hành động như phần trước, bộ phim dành nhiều thời gian để giới thiệu kế hoạch, xây dựng diễn biến, đồng thời đan xen những khoảnh khắc tâm lý nhằm khai thác sâu nội tâm nhân vật</p>
+				<p>Nhờ đó, tiết tấu bộ phim tỏ ra cân đối, với mức độ hấp dẫn, kịch tính, và ác liệt tăng dần theo thời lượng. Cảm xúc của khán giả nhờ đó được đẩy lên theo từng bước, và hứa hẹn vỡ òa bởi đoạn kết đầy bi tráng.</p>
+				<p>Diễn biến của Endgame có lối xây dựng lớp lang và bài bản, qua đó giúp đem đến cho khán giả nhiều bất ngờ khó đoán. Điều đặc biệt là Avengers: Endgame liên kết rất chặt chẽ với các tác phẩm trước đây của MCU, và khiến khán giả từng gắn bó với loạt phim sẽ cảm thấy thích thú, hoài niệm.</p>
+				<center><img src="Anh3.png" width="100%"></center>
+				<h3><b>Gợi mở các chi tiết "<i>chiều Fan</i> hết cỡ</b></h3>
+
+
+				<p>Avengers: Infinity War từng hấp dẫn khán giả bởi tiết tấu kịch tính, cùng phần hành động dày đặc, mãn nhãn. Nhưng cũng vì thế mà tâm lý nhân vật trong phim chưa được ưu tiên xây dựng đúng mức. Đến Avengers: Endgame, đội ngũ làm phim đã cơ bản khắc phục nhược điểm này.</p>
+				<p>Bộ phim ưu tiên thời lượng để khai thác tâm lý nhân vật, đặc biệt là các siêu anh hùng đời đầu quen thuộc như Iron Man (Robert Downey Jr.), Captain America (Chris Evans), và Thor (Chris Hemsworth). Bộ ba không chỉ đóng vai trò quan trọng trong diễn biến bộ phim, mà còn được xây dựng thêm những câu chuyện riêng bên lề, giúp khán giả đồng cảm hơn với tâm lý của họ.</p>
+				<center><img src="Anh4.png" width="100%"></center>
+				<p>Bộ đôi người hùng không mang siêu năng lực nhưng rất được khán giả yêu thích - Black Widow (Scarlett Johansson) và Hawkeye (Jeremy Renner) - cũng được ưu tiên thể hiện tâm lý nhiều hơn, thay vì xuất hiện với cá tính lạnh lùng cố hữu khi trước.</p>
+				<p>Không có câu chuyện mở rộng riêng, hai nhân vật chủ yếu được miêu tả tâm lý qua lời thoại và hành động ngắn gọn, cô đọng. Nhưng hiệu ứng cảm xúc đến từ cả hai vẫn là rất chân thật.</p>
+				<p>Điều đó giúp đem đến những khoảng lặng cần thiết để tiết tấu phim trở nên cân đối hơn. Khi khán giả thấy đồng cảm với họ, trận chiến cuối cùng lại càng trở nên hấp dẫn và có ý nghĩa hơn, bởi mỗi sự hy sinh, đánh đổi đều mang giá trị nhất định.</p>
+				<p>Là phần kết của cả một chuyến hành trình dài, các nhà làm phim có vẻ như không ngại “bung lụa” để chiều fan hết cỡ bằng hàng loạt chi tiết nhỏ từ truyện tranh gốc được cài cắm liên tục.</p>
+				<p>Nhóm “trứng phục sinh” không chỉ khiến khán giả yêu thích loạt truyện gốc cảm thấy phấn khích, mà ngay cả khán giả chỉ theo dõi MCU cũng có thể nắm bắt và thưởng thức trọn vẹn.</p>
+
+				
+				<h3><b>Hành động chất lượng và đậm chất giải trí</b></h3>
+				<p>Có thời lượng vượt trội so với những tác phẩm cùng loại, Avengers: Endgame vẫn đảm bảo tính giải trí cao nhờ cân đối tốt giữa các yếu tố tâm lý, chính kịch, và giải trí đại chúng.</p>
+				<p>Phần hành động trong phim được tiết chế hơn hẳn so với Avengers: Infinity War, cả về thời lượng lẫn chất lượng. Các trường đoạn hành động trong phim xảy ra dàn trải với thời lượng ngắn, chủ yếu là những trận chiến tay đôi đơn lẻ.</p>
+				<p>Ngay cả trận chiến cuối cùng có quy mô và thời lượng lớn nhất, nhưng thực tế vẫn bị xé lẻ thành nhiều phân cảnh nhỏ và thực tế vẫn còn có thể hoành tráng hơn. Tuy nhiên, đánh giá chung về phần hành động của Avengers: Endgame vẫn là rất tốt.</p>
+				<p>Mảng hài hước của bộ phim, tương tự như Avengers: Infinity War, đôi lúc bị lạm dụng thái quá khiến mạch phim bị loãng và thiếu sự nghiêm túc cần thiết. Phần hiệu ứng hình ảnh và âm nhạc có chất lượng tốt so với nhiều tác phẩm cùng thể loại.</p>
+				<center><img src="Anh5.png" width="100%"></center>
+				<p>Nhóm diễn viên trong phim thể hiện tương đối trọn vẹn nhân vật của mình, đặc biệt là các gương mặt kỳ cựu từng gắn bó với khán giả từ ngày đầu. Có thể nói đây là phần phim Avengers đầu tư xây dựng nhân vật và diễn xuất tốt nhất, gần như không thua kém nhiều so với các phim lẻ của riêng từng nhân vật.</p>
+				<p>Bên cạnh những ưu điểm vượt trội, Avengers: Endgame vẫn còn những điểm trừ nhỏ đáng tiếc. Kịch bản phim xây dựng kế hoạch hấp dẫn và có lớp lang, nhưng chưa đi sâu miêu tả chi tiết để tạo ra cơ sở cho loạt sự kiện tiếp sau.</p>
+
+				<p>Điều đó khiến mạch phim diễn ra còn máy móc. Có nhiều chi tiết mang tính áp đặt của biên kịch và đạo diễn, nhằm “ép” tác phẩm diễn ra theo đúng ý đồ, nhưng lại thiếu đi nền tảng thuyết phục. Hậu quả là Endgame còn nhiều lỗ hổng về mặt logic, và có những bước ngoặt diễn ra mà thiếu đi cơ sở vững chắc.</p>
+
+				<p>Một vài câu hỏi còn bỏ ngỏ của phần phim trước thực tế cũng chưa được giải đáp rõ ràng ở Avengers: Endgame, như quyền năng thực sự và cách thức vận hành của Đá Vô cực. Năng lực chiến đấu của một số nhân vật quan trọng không thống nhất với những gì họ đã thể hiện, lúc mạnh lúc yếu một cách bất thường nhằm phục vụ cho ý đồ kịch bản.</p>
+
+				<p>Hoành tráng, bất ngờ và giàu cảm xúc, Avengers: Endgame là phần kết mỹ mãn cho chuyến hành trình đầu tiên kéo dài hơn một thập kỷ của đế chế MCU, với sự dẫn dắt của biệt đội siêu anh hùng Avengers thế hệ tiên phong.</p>
+
+				<p>Đây chắc chắn là cột mốc đáng nhớ không chỉ đối với MCU, mà còn cả với lịch sử dòng phim siêu anh hùng, và khép lại một chặng đường đã thay đổi toàn bộ cục diện ngành công nghiệp điện ảnh hiện đại.</p>
+				
+				
+				
+			</div>
+
+			<div class="column side" class="line">
+				<p style="font-size: 100%">Đánh giá</p>
+				<div class="rate">
+					<input type="radio" id="star5" name="rate" value="5" />
+					<label for="star5" title="text">5 stars</label>
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4" title="text">4 stars</label>
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3" title="text">3 stars</label>
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2" title="text">2 stars</label>
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1" title="text">1 star</label>
+				</div>
+				<i><textarea rows="4" cols="23" name="comment" form="usrform">&ensp;Bình luận</textarea></i>
+				<br>
+				<button type="submit" form="nameform" value="Submit" style="width: 20%; margin-left: 170px">Gửi</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+	</script>
+</body>
+</html>

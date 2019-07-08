@@ -1,0 +1,224 @@
+s<!DOCTYPE html>
+<html>
+<head>
+	<title>The Godfather</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/ico" href="logo.png" />
+	<style>
+		p.small {
+			line-height: 0;
+		}
+
+		img.sticky {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		/* Style the header */
+		.header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		/* Style the topnav links */
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Create three unequal columns that floats next to each other */
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Left and right column */
+		.column.side {
+			width: 25%;
+		}
+
+		/* Middle column */
+		.column.middle {
+			width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column.side, .column.middle {
+				width: 100%;
+			}
+		}
+
+		hr.line {
+			border: 1px solid red;
+		}
+
+		.box {
+			width: 40px;
+			height: 25px;
+			border: 1px solid gray;
+			background-color: gray;
+		}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.rate {
+			float: left;
+			height: 46px;
+			padding: 0 10px;
+		}
+		.rate:not(:checked) > input {
+			position:absolute;
+			top:-9999px;
+		}
+		.rate:not(:checked) > label {
+			float:right;
+			width:1em;
+			overflow:hidden;
+			white-space:nowrap;
+			cursor:pointer;
+			font-size:30px;
+			color:#ccc;
+		}
+		.rate:not(:checked) > label:before {
+			content: '★ ';
+		}
+		.rate > input:checked ~ label {
+			color: #ffc700;    
+		}
+		.rate:not(:checked) > label:hover,
+		.rate:not(:checked) > label:hover ~ label {
+			color: #deb217;  
+		}
+		.rate > input:checked + label:hover,
+		.rate > input:checked + label:hover ~ label,
+		.rate > input:checked ~ label:hover,
+		.rate > input:checked ~ label:hover ~ label,
+		.rate > label:hover ~ input:checked ~ label {
+			color: #c59b08;
+		}
+	</style>
+</head>
+<body>
+	<div class="w3-top">
+		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<a href="#home" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"><b style="color: red">ACTION!</b></a>
+			<!-- Float links to the right. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+				<a href="#movies" class="w3-bar-item w3-button">Movies</a>
+				<a href="#about" class="w3-bar-item w3-button">About</a>
+				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1000px; margin-top: 40px;" id="home">
+		<img class="w3-image" src="wallpaper.jpg" alt="Home Wallpaper" width="1500" height="700">
+	</header>
+
+	<div class="w3-content w3-padding" style="max-width:1100px">
+		<div class="row" style="margin-left: 25px">
+			<div class="column side" style="font-size: 80%">
+				<h2><img class="sticky" src="godfather.jpg" alt="The Godfather" width="250" height="370"></h2>
+				<p style="font-size: 150%"><font color="red"><b>Thông tin phim</b></font></p>
+				<hr class="line">
+				<p><b>Rated:</b>&emsp;&emsp;&emsp;C18</p>
+				<p><b>Thể loại:</b>&emsp;&ensp;&nbsp;Tội phạm, Chính Kịch</p>
+				<p><b>Đạo diễn:</b>&emsp;&nbsp;Francis Ford Coppola</p>
+				<p><b>Diễn viên:</b>&emsp;Marlon Brando, Al Pacino, James Caan</p>
+				<p><b>Khởi chiếu:</b> 24/03/1972</p>
+				<p><b>Thời lượng:</b> 175 phút</p>
+			</div>
+
+			<div class="column middle">
+				<h2><b>The Godfather</b></h2>
+				<p class="small" style="font-size: 120%">Bố Già</p>
+				<div class="row">
+					<div class="column">
+						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0068646" data-style="p2">
+							<a href="https://www.imdb.com/title/tt0068646/?ref_=plg_rt_1">
+								<img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" The Godfather
+								(1972) on IMDb" />
+							</a>
+						</span>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>C18</center></div>
+					</div>
+					<div class="column">
+						<div class="box" style="color: white;"><center>175'</center></div>
+					</div>
+				</div>
+				
+				<p class="small" style="font-size: 85%;"><i>Tội phạm, Chính kịch</i></p>
+				<hr class="line">
+				<p>Được chuyển thể từ cuốn tiểu thuyết cùng tên của tác giả Mario Puzzo, The Godfather là một câu chuyện đầy máu và sự tăm tối khi nói về gia đình mafia gốc Sicilia, Corleone và những cuộc thanh trừng tang tóc giữa những băng đảng trên đất Mỹ. Có thể nói, bản thân tác phẩm gốc của Mario Puzzo là một trong những áng văn hay nhất về cuộc sống của những gã anh chị, những kẻ chỉ sống theo luật lệ của riêng mình. Việc khắc họa nhân vật bố già Vito Corleone tuy lạnh lùng nhưng vẫn đầy đạo nghĩa, tuy dễ gần nhưng nắm đầy quyền lực đã góp phần khiến cho tiểu thuyết này trở nên vô cùng nổi tiếng cũng như trở thành cuốn sách bán chạy nhất mọi thời đại.</p><br>
+				<p>Bối cảnh phim được lấy vào năm 1945, thời kì hoàng kim của mafia trên đất mỹ. Một thời kì mà máu và hận thù luôn tràn ngập, và trong cái thời đại đen tối ấy, Vito Corleone (<ins><i>Marlon Brando</i></ins>) hiện lên như một ông hoàng của giới mafia, khoảnh khắc khi chân dung ông trùm xuất hiện trong phòng làm việc, tay vuốt ve chú mèo, giọng khoan thai nói chuyện với những kẻ yếu thế đang muốn nhờ cậy thế lực của nhà Corleone, khán giả xem phim mới thấy được cái thần thái và khí chất hơn người của một ông trùm trong giới tội phạm. Lời thoại “Ta sẽ cho hắn một yêu cầu mà hắn chẳng thể nào chối từ” của ông khi nói với người con trai nuôi Johnny Fontane (<ins><i>Al Martino</i></ins>) đã khiến cho người xem ngay lập tức cảm thấy được quyền lực cũng như cái uy vô cùng lớn của ông trùm cũng như gia tộc Corleone.</p><br>
+				<p>Nếu như ở phân đoạn này, người xem sẽ nín thở hồi hộp chờ đợi cuộc trả thù của Vito Corleone thì một lần nữa ông trùm lại làm tất cả phải ngạc nhiên, ông sắp xếp một cuộc hòa giải giữa năm đại gia tộc, tuyên bố rằng ông sẽ không trả thù cho đứa con của mình và sẽ chia sẻ quyền lực chính trị của mình để giúp đỡ những gia tộc khác. Sự thỏa hiệp có phần nhượng bộ này chính là bước đệm mà Vito Corleone chuẩn bị để giúp cho sự kế thừa trở nên dễ dàng hơn cho Michael, giúp anh có thêm thời gian chuẩn bị cũng như củng cố uy quyền của mình trong gia tộc.</p><br>
+				<p>Và, trong những ngày cuối đời, Vito Corleone dồn hết sức để chỉ dạy cũng như đưa ra những lời khuyên cho Michael, giúp cho anh càng ngày càng có chỗ đứng vững mạnh trong lòng những thành viên của gia đình Corleone, ông chỉ cho anh ai sẽ là kẻ thù của mình và cách để thanh trừng chúng, giúp cho nội bộ của gia tộc yên ổn hơn cũng như giúp cho “chiếc ngai vàng” của Michael vững chắc hơn. Hình ảnh một ông trùm ngạo nghễ trút hơi thở cuối cùng trong vườn cam lúc đang nô đùa với đứa cháu trai của mình chắc chắn là một trong những hình ảnh ấn tượng nhất của bộ phim. Lúc này, cái chết của ông có một tâm thế rất nhẹ nhàng, bình thản khi những ưu tư trong lòng phần nào đã được giải quyết ổn thỏa.</p><br>
+				<p>Triều đại Vito Corleone chấm dứt, cũng là lúc triều đại mới của Michael Corleone bắt đầu. Anh từng bước lập kế hoạch thủ tiêu những kẻ thù, đồng thời thanh trừng những mối họa trong gia tộc bất chấp mối quan hệ gia đình, máu mủ. Quả thật, diễn xuất của “hoàng tử tội ác” Michael quá xuất sắc khi lột tả thành công một quá trình thay đổi từ một người hiền lành, tốt tính đến một ông trùm tàn ác, xảo quyệt.</p>
+			</div>
+
+			<div class="column side" class="line">
+				<p style="font-size: 100%">Đánh giá</p>
+				<div class="rate">
+					<input type="radio" id="star5" name="rate" value="5" />
+					<label for="star5" title="text">5 stars</label>
+					<input type="radio" id="star4" name="rate" value="4" />
+					<label for="star4" title="text">4 stars</label>
+					<input type="radio" id="star3" name="rate" value="3" />
+					<label for="star3" title="text">3 stars</label>
+					<input type="radio" id="star2" name="rate" value="2" />
+					<label for="star2" title="text">2 stars</label>
+					<input type="radio" id="star1" name="rate" value="1" />
+					<label for="star1" title="text">1 star</label>
+				</div>
+				<i><textarea rows="4" cols="23" name="comment" form="usrform">&ensp;Bình luận</textarea></i>
+				<br>
+				<button type="submit" form="nameform" value="Submit" style="width: 20%; margin-left: 170px">Gửi</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+	</script>
+</body>
+</html>
