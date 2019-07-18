@@ -8,10 +8,10 @@
 		<tr><td>
 			<p>
 				Weight (kg): 
-				<input id="id1" type="text" value ="80" required/>
+				<input id="id1" type="text" value ="" required/>
 			<p>
 				Height (m): 
-				<input id="id2" type="text" value="1.7" required/>
+				<input id="id2" type="text" value="" required/>
 			<p>
 				<DIV id="id3">
 				 The result will be displayed here
@@ -20,8 +20,8 @@
 				 
 				</DIV>
 			<p>
-				<input type="button" onClick='fun();' value="Calculate BMI1"/>
-				<input type="button" onClick='fen();' value="Calculate BMI2"/>
+				<input type="button" onClick='fun();' value="Calculate BMI"/>
+
 		</td></tr>
 	</table>
 
@@ -67,44 +67,5 @@
 	  document.getElementById("id4").style.fontSize = "20";
 	  document.getElementById("id4").style.color = "red";
 	}
-	function fen(){
-		x = document.getElementById("id1").value;
-		k = parseFloat(x);
-		x = document.getElementById("id2").value;
-		m = parseFloat(x);
-		
-		bmi= Math.ceil(k/(m*m));
-		
-		xResult="";
-		bmiResult="";
-		
-		if (bmi<18){
-			bmiResult="Your BMI is "+ bmi;
-			xResult="Your body type is Underweight";
-			}
-			else if (bmi>=18 && bmi<25){
-				bmiResult="Your BMI is "+ bmi;
-				xResult="Your body type is Normal";
-				}
-				else if (bmi>=25 && bmi<=40){
-					bmiResult="Your BMI is "+ bmi;
-					xResult="Your body type is Overweight";
-					}
-					else {
-						bmiResult="Your BMI is "+ bmi;
-						xResult="Your body type is Obese";
-						}
-	  document.getElementById("id3").innerHTML = bmiResult;
-	  document.getElementById("id3").style.fontWeight = "bold";
-	  document.getElementById("id3").style.fontSize = "20";
-	  document.getElementById("id3").style.color = "blue";
-	  
-	  document.getElementById("id4").innerHTML = xResult;
-	  document.getElementById("id4").style.fontWeight = "bold";
-	  document.getElementById("id4").style.fontSize = "20";
-	  document.getElementById("id4").style.color = "red";
-	}
 	
-
-
 </script>
