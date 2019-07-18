@@ -1,0 +1,158 @@
+
+<html>
+<head>
+	<title> Lab 09 SoLution </title>
+</head>
+<body>
+	<form action="" method="GET" name="frm1">
+	<table width="80%" border="1" align="center" cellspacing ="2" cellpadding="5" style="width: 500; height:250">
+		<tr>
+		
+		<td>
+		
+			<p>
+				Name: 
+				<input id="idName" type="textName" value ="" required/>
+			<p>	
+				Address: 
+				<input id="idAddress" type="textAddress" value="" required/>
+			<p>
+				Email: 
+				<input id="idEmail" type="textEmail" value="" required pattern="[^@]+@gmail+\.com" />
+			<p>
+				Age: 
+				<input id="idAge" type="textAge" value="" required/>
+			<p>
+				Gender: 
+				<select id="idGender" name="gender"required requiredmsg="Please, pick one" >
+					<option  selected disabled value=""> Select</option>
+					<option  value="1" required/> Male</option>
+					<option  value="2"required/> Female</option>
+				</select> <br>
+				<br>
+			
+			<p>
+				Room Type: 
+				<select id="idRoom" name="room"required requiredmsg="Please, pick one">
+				<option  selected disabled value=""> Select</option>
+				<option value="1" required/> A/C </option>
+				<option value="2" required/> Non-A/C </option>
+				<option value="3" required/> Deluxe </option>
+				</select> <br>
+			<p>
+				Type of Payment:
+				<select id="idPayment" name="payment"required requiredmsg="Please, pick one">
+				<option  selected disabled value=""> Select</option>
+				<option value="4" required/> Cash </option>
+				<option value="5" required/> Credit/Debit Card </option>
+				<option value="6" required/> Coupons </option>
+				</select> <br>		
+			
+		
+				
+		</td>	
+	
+			
+		
+		
+		</tr>
+		<tr><td>
+		<p>
+				<input  type="submit" value="Send" onClick = 'CheckInfor1();'>
+				<input  type="reset" value="Reset" >
+		</td></tr>
+	</table>
+	</form>
+</body>
+</html>
+<script language="Javascript">
+
+	function CheckInfor1() {
+        
+        if (Name()==true && Address()==true && Email()==true && Age()==true ) {
+            alert("Information of customer has been saved.");
+        }
+        else{
+            alert("Information is invalid!!!");
+        }
+		
+        
+        if (Name()==true) {
+            alert( "Name: valid");
+        } else {
+            alert("Name: invalid");
+        }
+       
+        if (Address()==true) {
+            alert("Address: valid");
+        } else {
+            alert("Address: invalid");
+        }
+       
+        if (Email()==true) {
+            alert("Email: valid");
+        } else {
+            alert("Email: invalid");
+        }
+       
+        if (Age()==true) {
+            alert("Age: valid");
+        } else {
+           alert("Age: invalid");
+        }
+		
+    }
+	
+	
+	
+	
+	
+    function Name() {
+        reg = /[^a-z ]/i;
+        mTen = document.frm1.txtName.value;
+        if (mTen == "" || reg.test(mTen) == true || mTen.length < 5) {
+            document.frm1.txtName.value = "";
+            document.frm1.txtName.focus();
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function Address() {
+        reg = /[^a-z ]/i;
+        mAddress = document.frm1.txtAddress.value;
+        if (mAddress == "" || reg.test(mAddress) == true) {
+            document.frm1.txtAddress.value = "";
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function Email() {
+        reg = /[^a-z.@_0-9]/i;
+        mEmail = document.frm1.txtEmail.value;
+        n = mEmail.length;
+        if (mEmail == "" || reg.test(mEmail) == true || mEmail.indexOf("@") <= 0 || mEmail.charAt(n - 1) == '@') {
+            document.frm1.txtEmail.value = "";
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function Age() {
+        var age = document.getElementById('idAge').value;
+        if (age <= 0 || age > 100) {
+            document.getElementById('idAge').value = "";
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+	
+	
+	
+</script>
