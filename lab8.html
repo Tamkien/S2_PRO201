@@ -1,0 +1,110 @@
+
+<html>
+<head>
+	<title>Lab 08</title>
+</head>
+<body>
+	<table width="40%" border="0" align="center" cellspacing ="2" cellpadding="5" style="width: 500; height:250">
+		<tr><td>
+			<p>
+				Weight (kg): 
+				<input id="id1" type="text" value ="80" required/>
+			<p>
+				Height (m): 
+				<input id="id2" type="text" value="1.7" required/>
+			<p>
+				<DIV id="id3">
+				 The result will be displayed here
+				</DIV>
+				<DIV id="id4">
+				 
+				</DIV>
+			<p>
+				<input type="button" onClick='fun();' value="Calculate BMI1"/>
+				<input type="button" onClick='fen();' value="Calculate BMI2"/>
+		</td></tr>
+	</table>
+
+</body>
+</html>
+
+
+<script>
+	function fun(){
+		x = document.getElementById("id1").value;
+		k = parseFloat(x);
+		x = document.getElementById("id2").value;
+		m = parseFloat(x);
+		
+		bmi= Math.ceil(k/(m*m));
+		
+		xResult="";
+		bmiResult="";
+		
+		if (bmi<18){
+			bmiResult="Your BMI is "+ bmi;
+			xResult="Your body type is Underweight";
+			}
+			else if (bmi>=18 && bmi<25){
+				bmiResult="Your BMI is "+ bmi;
+				xResult="Your body type is Normal";
+				}
+				else if (bmi>=25 && bmi<=30){
+					bmiResult="Your BMI is "+ bmi;
+					xResult="Your body type is Overweight";
+					}
+					else {
+						bmiResult="Your BMI is "+ bmi;
+						xResult="Your body type is Obese";
+						}
+	  document.getElementById("id3").innerHTML = bmiResult;
+	  document.getElementById("id3").style.fontWeight = "bold";
+	  document.getElementById("id3").style.fontSize = "20";
+	  document.getElementById("id3").style.color = "blue";
+	  
+	  document.getElementById("id4").innerHTML = xResult;
+	  document.getElementById("id4").style.fontWeight = "bold";
+	  document.getElementById("id4").style.fontSize = "20";
+	  document.getElementById("id4").style.color = "red";
+	}
+	function fen(){
+		x = document.getElementById("id1").value;
+		k = parseFloat(x);
+		x = document.getElementById("id2").value;
+		m = parseFloat(x);
+		
+		bmi= Math.ceil(k/(m*m));
+		
+		xResult="";
+		bmiResult="";
+		
+		if (bmi<18){
+			bmiResult="Your BMI is "+ bmi;
+			xResult="Your body type is Underweight";
+			}
+			else if (bmi>=18 && bmi<25){
+				bmiResult="Your BMI is "+ bmi;
+				xResult="Your body type is Normal";
+				}
+				else if (bmi>=25 && bmi<=40){
+					bmiResult="Your BMI is "+ bmi;
+					xResult="Your body type is Overweight";
+					}
+					else {
+						bmiResult="Your BMI is "+ bmi;
+						xResult="Your body type is Obese";
+						}
+	  document.getElementById("id3").innerHTML = bmiResult;
+	  document.getElementById("id3").style.fontWeight = "bold";
+	  document.getElementById("id3").style.fontSize = "20";
+	  document.getElementById("id3").style.color = "blue";
+	  
+	  document.getElementById("id4").innerHTML = xResult;
+	  document.getElementById("id4").style.fontWeight = "bold";
+	  document.getElementById("id4").style.fontSize = "20";
+	  document.getElementById("id4").style.color = "red";
+	}
+	
+
+
+</script>
