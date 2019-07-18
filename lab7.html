@@ -9,13 +9,13 @@
 		<tr><td>
 			<div>
 			<br><br><br>
-			<span id="span1">This is a text. </span> 
+			<span id="span1" style="background-color: yellow">This is a text. </span> 
 			<span id="span2">This is a text. </span>
 			<span id="span3">This is a text. </span> This is a text. 
 			<span id="span5">This is a text. </span>
 			This is a text. This is a text. This is a text. 
 			<span id="span9">This is a text. </span>
-			<span id="span10">This is a text. </span> <br><br>
+			<span id="span10" style="background-color: yellow">This is a text. </span> <br><br>
 			THE FIRST few words of an article in The Economist <br>
 			</div>
 		</td></tr>
@@ -28,8 +28,7 @@
 			</table>
 		</td></tr>
 		<tr><td align="left">
-			<button onClick= 'fun();'> Change Color </button>
-			<button onClick= 'foo(); '> Blink Color </button>
+			<button onClick= 'foo(); '> Change Color </button>
 		</td></tr>
 	</table>
 	
@@ -38,22 +37,14 @@
 <script>
 	var x = "Hello";
 	var a = ["Hello","World"];
-	function fun() {
-		x= document.getElementById ("span1");
-		x.style= "color:red; background:yellow";
-		x= document.getElementById ("span10");
-		x.style= "color:red; background:yellow";
-	}
+
 	function foo(){
 		x= document.getElementById ("span1");
-			x.style= "background: green";
+			x.style= "background: red";
 		
 		z= document.getElementById ("span10");
-			z.style= "background: green";
-
-		
+			z.style= "background: red";
 		setTimeout(foo,1000);
-		
 		
 	}
 	
