@@ -1,0 +1,86 @@
+
+<html>
+<head>
+	<title> Lab 07</title>
+</head>
+<body>
+	<table width="40%" border="0" align="center" cellspacing ="2" cellpadding="5" style="width: 500; height:250">
+	
+		<tr><td>
+			<div>
+			<br><br><br>
+			<span id="span1">This is a text. </span> 
+			<span id="span2">This is a text. </span>
+			<span id="span3">This is a text. </span> This is a text. 
+			<span id="span5">This is a text. </span>
+			This is a text. This is a text. This is a text. 
+			<span id="span9">This is a text. </span>
+			<span id="span10">This is a text. </span> <br><br>
+			THE FIRST few words of an article in The Economist <br>
+			</div>
+		</td></tr>
+		
+		<tr><td >
+			<table width="40%" border="1" align="left" cellspacing ="2" cellpadding="5" style="width: 400; height:150" >
+				<tr><td align="center">
+				<b> This is a tablecell with equal padding on each side</b>
+				</td></tr>
+			</table>
+		</td></tr>
+		<tr><td align="left">
+			<button onClick= 'fun();'> Change Color </button>
+			<button onClick= 'foo(); '> Blink Color </button>
+			<button onClick= 'fen();'> Start Running </button>
+		</td></tr>
+	</table>
+	
+</body>
+</html>
+<script>
+	var x = "Hello";
+	var a = ["Hello","World"];
+	function fun() {
+		x= document.getElementById ("span1");
+		x.style= "color:red; background:yellow";
+		x= document.getElementById ("span3");
+		x.style= "color:red; background:yellow";
+		x= document.getElementById ("span10");
+		x.style= "color:red; background:yellow";
+	}
+	function foo(){
+		x= document.getElementById ("span1");
+		y= x.style.color;
+		
+		if (y=="red")
+			x.style= "background: green";
+		else 
+			x.style= "background: green";
+		
+		z= document.getElementById ("span10");
+		t= z.style.color;
+		if (t=="pink")
+			z.style= "background: green";
+		else 
+			z.style= "background: green";
+		
+		setTimeout(foo,1000);
+		
+		
+	}
+	
+	
+	function fen(){
+		x= document.getElementById("span5");
+		x.style= "color:#6600FF; background:#FFFF99";
+		y= x.innerHTML;
+		z= y.slice(1);
+		u= y.charAt(0);
+		v= z + u;
+		x.innerHTML= v;
+		setTimeout(fen,500);
+
+	}
+
+</script>
+
+
