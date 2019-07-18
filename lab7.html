@@ -46,19 +46,11 @@
 	}
 	function foo(){
 		x= document.getElementById ("span1");
-		y= x.style.color;
-		
-		if (y=="red")
 			x.style= "background: green";
-		else 
-			x.style= "background: yellow";
 		
 		z= document.getElementById ("span10");
-		t= z.style.color;
-		if (t=="red")
 			z.style= "background: green";
-		else 
-			z.style= "background: yellow";
+
 		
 		setTimeout(foo,1000);
 		
