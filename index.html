@@ -1,410 +1,424 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TestProject!</title>
+  <title>ACTION!</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="icon" type="image/ico" href="logo.png" />
   <link rel="stylesheet" type="text/css" href="./PhongTest.css">
-
+  <style>
+    a {
+     text-decoration: none;
+   }
+   body {
+    margin-top: 80px;
+  }
+</style>
 </head>
 
 <body>
-	
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-      <a href="#logo" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"></a>
-      <a href="#home" class="w3-bar-item w3-button"><b style="color: red">ACTION!</b><br> Movie Reviews</a>
+    <div class="w3-bar w3-white w3-wide w3-card">
+      <a href="#home" class="w3-bar-item"><img src="logo.png" width="40" height="40"><b style="color: red">ACTION!</b></a>
       <!-- Float links to the right. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-        <a href="#projects" class="w3-bar-item w3-button">Movies</a>
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="#movies" class="w3-bar-item" style="color: red"><b>Phim</b></a>
+        <a href="#news" class="w3-bar-item" style="color: red;"><b>Tin tức</b></a>
+        <a href="#about" class="w3-bar-item" style="color: red"><b>Giới thiệu</b></a>
+        <a href="#contact" class="w3-bar-item" style="color: red"><b>Liên hệ</b></a>
       </div>
     </div>
   </div>
 
   <!-- Header -->
   <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <img class="w3-image" src="wallpaper.jpg" alt="Home Wallpaper" width="1500" height="800" style="filter: blur(2px);">
-    <div class="w3-display-middle w3-margin-top w3-center">
-      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-red w3-opacity-min"><b>Movie</b></span> <span class="w3-hide-small w3-hover-text-gray">Reviews</span></h1>
+    <div class="w3-content" style="max-width:90%; border-top: 7px ridge red; border-bottom: 7px ridge red;">
+      <img class="mySlides" src="gatsby.gif" alt="Gatsby Gif" style="width:100%; height: 550px;">
+      <img class="mySlides" src="wallpaper.jpg" style="width:100%; height: 550px;">
+      <img class="mySlides" src="wallpaper2.jpg" style="width:100%; height: 550px;">
+      <img class="mySlides" src="pulpfictionquote.jpg" alt="Pulp Fiction Quote" style="width:100%; height: 550px;">
+      <img class="mySlides" src="godfather.gif" alt="Godfather Gif" style="width:100%; height: 550px;">
+      <img class="mySlides" src="titanicquote.jpg" alt="Titanic Quote" style="width:100%; height: 550px;">
+      <img class="mySlides" src="fiction.gif" alt="Pulp Fiction Gif" style="width:100%; height: 550px;">
+      <img class="mySlides" src="shankquote.jpg" alt="Shawnshank Redemtion Quote" style="width:100%; height: 550px;">
+      <img class="mySlides" src="endgame.gif" alt="Endgame Gif" style="width:100%; height: 550px;">
+      <img class="mySlides" src="thanos.gif" alt="Thanos Gif" style="width:100%; height: 550px;">
+      <img class="mySlides" src="joker.gif" alt="Joker Gif" style="width:100%; height: 550px;">
+      <img class="mySlides" src="lalaland.gif" alt="La La Land Gif" style="width:100%; height: 550px;">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
   </header>
   
   <!-- Page content -->
-  <div class="w3-content w3-padding" style="max-width:1564px">
+  <div class="w3-content w3-padding" style="max-width:1564px" id="movies">
 
     <!-- Movie Section -->
-    <div class="w3-container w3-padding-32" id="projects">
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Movies</h3>
+    <div class="w3-container w3-padding-32">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color: yellow;"><b>PHIM</b></h3>
     </div>
 
-<center><table style="overflow-x:auto;"  cellspacing="15px">
-	<tr>
-		<td>
-			<div class="flip-box">
-        		<div class="flip-box-inner">
-        			<div class="flip-box-front">
-          				<img src="godfather1.PNG" alt="The Godfather" style="width:100%" height="400">
-         			</div>
-			<div class="flip-box-back">
-  				<table>
-    				<tr>
-       					<img src="/godfather2.PNG" style="width:100%" height="400" >
-    				</tr>
-    				<tr>
-        				-----------<a href="Reviews/God father/godfather.html" style="font-size: 20px">Learn more</a>-----------
-   			   		</tr>
-  				</table>
-    		</div>
-     			</div>
-    		</div>
-    	</td>
-
-		<td> 
-			<div class="flip-box">
-        		<div class="flip-box-inner">
-         			<div class="flip-box-front">
-          				<img src="titanic1.png" alt="Titanic" style="width:100%" height="400">
-         			</div>
-			<div class="flip-box-back">
-  				<table>
-    				<tr>
-       					<img src="./titanic2.png" style="width:100%" height="400">
-    				</tr>
-    				<tr>
-        -----------<a href="Reviews/Titanic/Titanic.html" style="font-size: 20px">Learn more</a>-----------
-    				</tr>
-  </table>
- 
-
-
-    </div>
-     </div>
-    </div></td>
-		<td> <div class="flip-box">
+    <center><table style="overflow-x:auto;" cellspacing="15px">
+     <tr>
+      <td>
+       <div class="flip-box">
         <div class="flip-box-inner">
          <div class="flip-box-front">
-          <img src="pulpfiction1.png" alt="Pulp Fiction" style="width:100%" height="400">
-         </div>
-<div class="flip-box-back">
-  <table>
-    <tr>
-       <img src="./pulpfiction2.png" style="width:100%" height="400">
-    </tr>
-    <tr>
-        -----------<a href="Reviews/PulpFiction/PulpFiction.html" style="font-size: 20px">Learn more</a>-----------
-    </tr>
-  </table>
- 
+          <img src="godfather.jpg" alt="The Godfather" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">BỐ GIÀ</b>
+        </div>
+        <div class="flip-box-back">
+          <table>
+            <tr>
+              <img src="./godfather2.png" style="width:100%" height="400" >
+            </tr>
+            <tr>
+              <center><a href="Reviews/Godfather/godfather.html" style="font-size: 20px;">Đọc tiếp</a></center>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </td>
+
+  <td> 
+   <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="titanic.jpg" alt="Titanic" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">TITANIC</b>
+      </div>
+      <div class="flip-box-back">
+        <table>
+          <tr>
+            <img src="./titanic2.png" style="width:100%" height="400">
+          </tr>
+          <tr>
+            <center><a href="Reviews/Titanic/Titanic.html" style="font-size: 20px">Đọc tiếp</a></center>
+          </tr>
+        </table>
+
+
+
+      </div>
+    </div>
+  </div></td>
+  <td> <div class="flip-box">
+    <div class="flip-box-inner">
+     <div class="flip-box-front">
+      <img src="pulpfiction.jpg" alt="Pulp Fiction" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">CHUYỆN TÀO LAO</b>
+      <div class="flip-box-back">
+        <table>
+          <tr>
+           <img src="./pulpfiction2.png" style="width:100%" height="400">
+         </tr>
+         <tr>
+          <center><a href="Reviews/PulpFiction/PulpFiction.html" style="font-size: 20px">Đọc tiếp</a></center>
+        </tr>
+      </table>
+
 
 
     </div>
-     </div>
-    </div></td>
-		<td> <div class="flip-box">
-        <div class="flip-box-inner">
-         <div class="flip-box-front">
-          <img src="shawshank1.png" alt="The Shawshank Redemption" style="width:100%" height="400">
-         </div>
-<div class="flip-box-back">
-  <table>
-    <tr>
+  </div>
+</div></td>
+<td> <div class="flip-box">
+  <div class="flip-box-inner">
+   <div class="flip-box-front">
+    <img src="shawshank.jpg" alt="The Shawshank Redemption" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">NHÀ TÙ SHAWSHANK</b>
+  </div>
+  <div class="flip-box-back">
+    <table>
+      <tr>
        <img src="./shawshank2.png" style="width:100%" height="400">
-    </tr>
-    <tr>
-        -----------<a href="Reviews/NhaTu/NhaTu.html" style="font-size: 20px">Learn more</a>-----------
-    </tr>
-  </table>
- 
-
-
-    </div>
-     </div>
-    </div></td>
-	</tr>
-
-	<tr>
-		<td> <div class="flip-box">
-        <div class="flip-box-inner">
-         <div class="flip-box-front">
-          <img src="endgame1.png" alt="Avengers: Endgame" style="width:100%" height="400">
-         </div>
-<div class="flip-box-back">
-  <table>
-    <tr>
-       <img src="./endgame2.png" style="width:100%" height="400">
-    </tr>
-    <tr>
-        -----------<a href="Reviews/EndGame/EndGame.html" style="font-size: 20px">Learn more</a>-----------
+     </tr>
+     <tr>
+      <center><a href="Reviews/NhaTu/NhaTu.html" style="font-size: 20px">Đọc tiếp</a></center>
     </tr>
   </table>
- 
 
 
+
+</div>
+</div>
+</div></td>
+</tr>
+
+<tr>
+  <td> <div class="flip-box">
+    <div class="flip-box-inner">
+     <div class="flip-box-front">
+      <img src="endgame.jpg" alt="Avengers: Endgame" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">BIỆT ĐỘI BÁO THÙ : HỒI KẾT</b>
     </div>
-     </div>
-    </div></td>
-		<td> <div class="flip-box">
-        <div class="flip-box-inner">
-         <div class="flip-box-front">
-          <img src="infinitywar1.png" alt="Avengers: Infinity War" style="width:100%" height="400">
-         </div>
-<div class="flip-box-back">
-  <table>
-    <tr>
+    <div class="flip-box-back">
+      <table>
+        <tr>
+         <img src="./endgame2.png" style="width:100%" height="400">
+       </tr>
+       <tr>
+        <center><a href="Reviews/EndGame/EndGame.html" style="font-size: 20px">Đọc tiếp</a></center>
+      </tr>
+    </table>
+
+
+
+  </div>
+</div>
+</div></td>
+<td> <div class="flip-box">
+  <div class="flip-box-inner">
+   <div class="flip-box-front">
+    <img src="infinitywar.jpg" alt="Avengers: Infinity War" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">BIỆT ĐỘI BÁO THÙ: CUỘC CHIẾN VÔ CỰC</b>
+  </div>
+  <div class="flip-box-back">
+    <table>
+      <tr>
        <img src="./infinitywar2.png" style="width:100%" height="400">
-    </tr>
-    <tr>
-        -----------<a href="Reviews/InfinityWar/InfinityWar.html" style="font-size: 20px">Learn more</a>-----------
+     </tr>
+     <tr>
+      <center><a href="Reviews/InfinityWar/InfinityWar.html" style="font-size: 20px">Đọc tiếp</a></center>
     </tr>
   </table>
- 
 
 
-    </div>
-     </div>
-    </div></td>
-		<td> <div class="flip-box">
-        <div class="flip-box-inner">
-         <div class="flip-box-front">
-          <img src="darkknight1.png" alt="The Dark Knight" style="width:100%" height="400">
-         </div>
-<div class="flip-box-back">
-  <table>
-    <tr>
+
+</div>
+</div>
+</div></td>
+<td> <div class="flip-box">
+  <div class="flip-box-inner">
+   <div class="flip-box-front">
+    <img src="darkknight.jpg" alt="The Dark Knight" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">KỊ SỸ BÓNG ĐÊM</b>
+  </div>
+  <div class="flip-box-back">
+    <table>
+      <tr>
        <img src="./darkknight2.png" style="width:100%" height="400">
-    </tr>
-    <tr>
-        -----------<a href="Reviews/Batman/Batman.html" style="font-size: 20px">Learn more</a>-----------
+     </tr>
+     <tr>
+      <center><a href="Reviews/Batman/Batman.html" style="font-size: 20px">Đọc tiếp</a></center>
     </tr>
   </table>
- 
 
 
-    </div>
-     </div>
-    </div></td>
-		<td> <div class="flip-box">
-        <div class="flip-box-inner">
-         <div class="flip-box-front">
-          <img src="lalaland1.png" alt="Lalaland" style="width:100%" height="400">
-         </div>
-<div class="flip-box-back">
-  <table>
-    <tr>
+
+</div>
+</div>
+</div></td>
+<td> <div class="flip-box">
+  <div class="flip-box-inner">
+   <div class="flip-box-front">
+    <img src="lalaland.jpg" alt="La La Land" style="width:100%" height="400"><b style="color: yellow; font-size: 110%;">LA LA LAND</b>
+  </div>
+  <div class="flip-box-back">
+    <table>
+      <tr>
        <img src="./lalaland2.png" style="width:100%" height="400">
-    </tr>
-    <tr>
-        -----------<a href="Reviews/LaLaLand/LaLaLand.html" style="font-size: 20px">Learn more</a>-----------
-    </tr>
-  </table>
- 
+     </tr>
+     <tr>
+      <center><a href="Reviews/LalaLand/LalaLand.html" style="font-size: 20px">Đọc tiếp</a></center>
+    </table>
 
 
-    </div>
-     </div>
-    </div></td>
-	</tr>
+
+  </div>
+</div>
+</div></td>
+</tr>
 </table></center>
 
-
 <br><br>
-<span style="font-size: 20px">News</span><br>_________________________________________________________________________________________________________________________________________________________________________________<br>
-<table border="1px">
-	<tr>
-		<td>
-			<div class="container"><img src="./News/Tienca.PNG" width="600px" class="anh">
-				<div class="middle">
-					<div class="text"><a href="#contact">Read More</a></div>
-				</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Nàng tiên cá da màu mới của Disney là ai?</b></p>
-			<a href="">Diễn viên, ca sĩ da màu Halle Bailey là người được chọn vào vai nhân vật chính Ariel trong Nàng Tiên Cá phiên bản live-action, theo thông báo mới nhất của Disney ngày 3/7. </a>
-			
-		</td>
-	</tr>
+<div id="news">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color: yellow;"><b>TIN TỨC</b></h3>
+  <center><table width="1000" style="border-spacing: 5px 14px;">
+   <tr>
+    <td>
+     <div class="container"><a href="news1.html"><img src="./News/TienCa.png" width="300px" class="anh"></a>
+     </div>
+   </td>
+   <td style="vertical-align: top;">
+     <a href="news1.html"><b>Nàng tiên cá da màu mới của Disney là ai?</b></a>
+     <p>Diễn viên, ca sĩ da màu Halle Bailey là người được chọn vào vai nhân vật chính Ariel trong Nàng Tiên Cá phiên bản live-action, theo thông báo mới nhất của Disney ngày 3/7.</p>
 
+   </td>
+ </tr>
 
-	<tr>
-		<td>
-			<div class="container"><img src="./News/Bautista.PNG" width="600px" class="anh">
-				<div class="middle">
-					<div class="text"><a href="#contact">Read More</a></div>
-					</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>DRAMA!! Dave Bautista 'đá đểu' Fast and Furious trên Twitter</b></p>
-			<a href="">Ngày 30/6 vừa qua, Dave Bautista đã có những bình luận không mấy thiện chí dành cho franchise Fast and Furious khi được người hâm mộ nhắc tới chuỗi phim này trên Twitter cá nhân của anh.</a>			
-		</td>
-
-	</tr>
-	<tr>
-		<td><div class="container"><img src="./News/Vuasutu.PNG" width="600px" class="anh">
-			<div class="middle">
-					<div class="text"><a href="#contact">Read More</a></div>
-					 </div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Lion King live-action có thể đạt $150 triệu + mở màn?</b></p>
-			<a href="">Theo kỳ vọng của nhà sản xuất, bộ phim Lion King phiên bản live-action lần này sẽ đem về cho Disney hơn 150 triệu USD chỉ trong 3 ngày ra mắt. Con số này được đưa ra dựa trên sự theo dõi ban đầu về phản ứng của giới phê bình và khán giả, và nó được cho là có thể cao hơn nữa nếu Disney tiếp tục đẩy mạnh các chiến dịch marketing của mình.	</a>
-		
-		</td>
-	</tr>
-
-
-	<tr>
-		<td><div class="container"><img src="./News/Marvel.PNG" width="600px" class="anh">
-			<div class="middle">
-				<div class="text"><a href="#contact">Read More</a></div>
-			</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Avengers: Endgame chưa kết thúc</b></p>
-			<a href="https://phephim.vn/post/755-Avengers:-Endgame-chua-ket-thuc">Marvel và Disney lại một lần nữa làm người hâm mộ bất ngờ, với thông tin về việc Avengers: Endgame sẽ quay lại màn ảnh rộng vào cuối tuần sau với một phiên bản mới.</a>
-		</td>
-	</tr>
-
-	<tr>
-		<td><div class="container"><img src="./News/TranhCai.PNG" width="600px" class="anh">
-		<div class="middle">
-			<div class="text"><a href="#contact">Read More</a></div>
-		</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Euphoria của HBO gây tranh cãi vì quá nhiều cảnh tình dục ở thiếu niên</b></p>
-			<a href="">Series Euphoria của đài HBO đã ngay lập tức gây ra nhiều tranh cãi, dù mới chỉ phát sóng tập đầu tiên ngày 16/6 vừa qua, do chứa quá nhiều yếu tố bạo lực và tình dục. </a>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<div class="container"><img src="./News/HungerGames.PNG" width="600px" class="anh">
-			<div class="middle">
-				<div class="text"><a href="#contact">Read More</a></div>
-			</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Hunger Games tiền truyện sẽ ra mắt năm 2020</b></p>
-			<a href="">Sau 4 phần cực kỳ thành công, người hâm mộ của franchise Hunger Games đã có thể vui mừng, vì phần tiền truyện của phim sẽ được đưa vào sản xuất, sau khi cuốn tiểu thuyết tiếp theo của Suzanne Collins được xuất bản. </a>
-		</td>
-	</tr>
-
-
-	<tr>
-		<td><div class="container"><img src="./News/Emmy.PNG" width="600px" class="anh">
-			<div class="middle">
-			<div class="text"><a href="#contact">Read More</a></div>
-				</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Emmy sẽ tiếp bước Oscar và không có MC?</b></p>
-			<a href="">Oscar 2019 được coi là lễ trao giải thành công khi toàn bộ sự chú ý của khán giả đều được dành cho các bộ phim xuất sắc, không phải MC. Liệu, Emmy 2019  sẽ tiếp bước Oscar để tiến hành lễ trao giải theo phương thức mới?</a>
-		</td>
-	</tr>
-
-	<tr>
-		<td>
-			<div class="container"><img src="./News/SpidermanFFH.PNG" width="600px" class="anh">
-			<div class="middle">
-				<div class="text"><a href="#contact">Read More</a></div>
-				</div>
-			</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Spider-man: Far From Home được kỳ vọng doanh thu 154 triệu đô trong 6 ngày</b></p>
-			<a href="">Spider-man: Far From Home là bộ phim thuộc vũ trụ điện ảnh Marvel tiếp theo sau Avengers: Endgame, dự kiến sẽ tiếp tục công phá phòng vé toàn cầu và xác lập nhiều kỷ lục về doanh thu mới.</a>
-		</td>
-	</tr>
-
-	<tr>
-		<td><div class="container">
-			<img src="./News/GOT.PNG" width="600px" class="anh">
-			<div class="middle">
-				<div class="text"><a href="#contact">Read More</a></div>
-				</div>
-		</div>
-		</td>
-		<td style="vertical-align: top;">
-			<p style="font-size: 30px"><b>Game of Thrones sẽ tranh giải Kịch bản và Đạo diễn xuất sắc tại Emmy 2019</b></p>
-			<a href="">Mới đây, HBO đã “cử” một vài tập trong season cuối của series Game of Thrones để tham gia tranh giải Emmy ở một số hạng mục, trong đó đáng chú ý là Kịch bản xuất sắc nhất và Đạo diễn xuất sắc nhất. </a>
-		</td>
-	</tr>
-</table>
-
-<br><br>
-    <!-- About Section -->
-    <div class="w3-container w3-padding-32" id="about">
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-      <p>We are ACTION!. A movie review website and uhmm.. what can we say, we love movies and love talking about movies. Our website are newly launch online so there are still some bugs or some inconvenient experiences. But we hope you have a good time surfing our website. Love you & enjoy. <br><br>Regard, ACTION! team.
-      </p>
-    </div>
-
-    <div class="w3-row-padding w3-grayscale">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="phong.jpg" alt="Phong" style="width:100%" height="480">
-        <h3>Nguyen The Phong</h3>
-        <p class="w3-opacity">Website </p>
-        <p>...</p>
-        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="kien.jpg" alt="Kien" style="width:100%">
-        <h3>Cao Tam Kien</h3>
-        <p class="w3-opacity">Online Supporter</p>
-	      <p>Owner of the domain <a href="https://tamkien.me">tamkien.me</a>. I test this site and make it available on the World Wide Web.</p>
-        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <img src="viet.jpg" alt="Viet" style="width:100%" height="480">
-        <h3>Ha Quoc Viet</h3>
-        <p class="w3-opacity">Website Creator</p>
-        <p>Huge fan of MCU, loves romantic & sci-fi movies, especially films about outter space.</p>
-        <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-      </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="w3-container w3-padding-32" id="contact">
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-      <p>Lets get in touch and talk about your next project.</p>
-      <form action="/action_page.php" target="_blank">
-        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-        <button class="w3-button w3-black w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-
-    <!-- Image of location/map -->
-    <div class="w3-container">
-      <img src="footer.jpg" class="w3-image" style="width:100%">
-    </div>
-
-    <!-- End page content -->
+ <tr>
+  <td>
+   <div class="container">
+    <a href="news3.html"><img src="./News/Bautista.png" width="300px" class="anh"></a>
   </div>
+</td>
+<td style="vertical-align: top;">
+ <a href="news3.html"><b>DRAMA!! Dave Bautista 'đá đểu' Fast and Furious trên Twitter</b></a>
+ <p>Ngày 30/6 vừa qua, Dave Bautista đã có những bình luận không mấy thiện chí dành cho franchise Fast and Furious khi được người hâm mộ nhắc tới chuỗi phim này trên Twitter cá nhân của anh.</p>			
+</td>
+</tr>
+<tr>
+  <td>
+    <div class="container"><a href="news6.html"><img src="./News/Vuasutu.png" width="300px" class="anh"></a>
+    </div>
+  </td>
+  <td style="vertical-align: top;">
+   <a href="news6.html"><b>Lion King live-action có thể đạt $150 triệu + mở màn?</b></a>
+   <p>Theo kỳ vọng của nhà sản xuất, bộ phim Lion King phiên bản live-action lần này sẽ đem về cho Disney hơn 150 triệu USD chỉ trong 3 ngày ra mắt. Con số này được đưa ra dựa trên sự theo dõi ban đầu về phản ứng của giới phê bình và khán giả, và nó được cho là có thể cao hơn nữa nếu Disney tiếp tục đẩy mạnh các chiến dịch marketing của mình.	</p>
+ </td>
+</tr>
 
 
-  <!-- Footer -->
-  <footer class="w3-center w3-black w3-padding-16">
-    <p>Sincerely from <a href="About.html" title="W3.CSS" target="_blank" class="w3-hover-text-red">ACTION!</a></p>
-  </footer>
+<tr>
+  <td>
+    <div class="container">
+      <a href="news5.html"><img src="./News/Marvel.png" width="300px" class="anh"></a>
+    </div>
+  </td>
+  <td style="vertical-align: top;">
+   <a href="news5.html"><b>Avengers: Endgame chưa kết thúc</b></a>
+   <p>Marvel và Disney lại một lần nữa làm người hâm mộ bất ngờ, với thông tin về việc Avengers: Endgame sẽ quay lại màn ảnh rộng vào cuối tuần sau với một phiên bản mới.</p>
+ </td>
+</tr>
 
-  
+<tr>
+  <td>
+    <div class="container">
+      <a href="news2.html"><img src="./News/TranhCai.png" width="300px" class="anh"></a>
+    </div>
+  </td>
+  <td style="vertical-align: top;">
+   <a href="news2.html"><b>Euphoria của HBO gây tranh cãi vì quá nhiều cảnh tình dục ở thiếu niên</b></a>
+   <p>Series Euphoria của đài HBO đã ngay lập tức gây ra nhiều tranh cãi, dù mới chỉ phát sóng tập đầu tiên ngày 16/6 vừa qua, do chứa quá nhiều yếu tố bạo lực và tình dục. </p>
+ </td>
+</tr>
+<tr>
+  <td>
+    <div class="container">
+      <a href="news4.html"><img src="./News/HungerGames.png" width="300px" class="anh"></a>
+    </div>
+  </td>
+  <td style="vertical-align: top;">
+   <a href="news4.html"><b>Hunger Games tiền truyện sẽ ra mắt năm 2020</b></a>
+   <p>Sau 4 phần cực kỳ thành công, người hâm mộ của franchise Hunger Games đã có thể vui mừng, vì phần tiền truyện của phim sẽ được đưa vào sản xuất, sau khi cuốn tiểu thuyết tiếp theo của Suzanne Collins được xuất bản. </p>
+ </td>
+</tr>
+
+
+<tr>
+  <td>
+    <div class="container">
+      <a href="emmy.html"><img src="./News/Emmy.png" width="300px" class="anh"></a>
+    </div>
+  </td>
+  <td style="vertical-align: top;">
+   <a href="emmy.html"><b>Emmy sẽ tiếp bước Oscar và không có MC?</b></a>
+   <p>Oscar 2019 được coi là lễ trao giải thành công khi toàn bộ sự chú ý của khán giả đều được dành cho các bộ phim xuất sắc, không phải MC. Liệu, Emmy 2019  sẽ tiếp bước Oscar để tiến hành lễ trao giải theo phương thức mới?</p>
+ </td>
+</tr>
+
+<tr>
+  <td>
+   <div class="container">
+    <a href="spidey.html"><img src="./News/SpidermanFFH.png" width="300px" class="anh"></a>
+  </div>
+</td>
+<td style="vertical-align: top;">
+ <a href="spidey.html"><b>Spider-man: Far From Home được kỳ vọng doanh thu 154 triệu đô trong 6 ngày</b></a>
+ <p>Spider-man: Far From Home là bộ phim thuộc vũ trụ điện ảnh Marvel tiếp theo sau Avengers: Endgame, dự kiến sẽ tiếp tục công phá phòng vé toàn cầu và xác lập nhiều kỷ lục về doanh thu mới.</p>
+</td>
+</tr>
+
+<tr>
+  <td><div class="container">
+   <a href="got.html"><img src="./News/GOT.png" width="300px" class="anh"></a>
+ </div>
+</td>
+<td style="vertical-align: top;">
+ <a href="got.html"><b>Game of Thrones sẽ tranh giải Kịch bản và Đạo diễn xuất sắc tại Emmy 2019</b></a>
+ <p>Mới đây, HBO đã “cử” một vài tập trong season cuối của series Game of Thrones để tham gia tranh giải Emmy ở một số hạng mục, trong đó đáng chú ý là Kịch bản xuất sắc nhất và Đạo diễn xuất sắc nhất. </p>
+</td>
+</tr>
+</table></center></div>
+
+<br><br>
+<!-- About Section -->
+<div class="w3-container w3-padding-32" id="about">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color: yellow;"><b>GIỚI THIỆU</b></h3>
+  <p>We are <span style="color: red;">ACTION!</span>. A movie review website and uhmm.. what can we say, we love movies and love talking about movies. Our website are newly launch online so there are still some bugs or some inconvenient experiences. But we hope you have a good time surfing our website. Love you & enjoy.<br>Regard, <span style="color: red;">ACTION!</span> team.
+  </p>
+  <p>Chúng tôi là <span style="color: red;">ACTION!</span>. Một trang web review phim và uhmm... chúng tôi yêu thích những bộ phim và thích thú khi bàn luận về những nội dung xung quanh những vấn đề về phim. Trang web của chúng mình là một trang web mới nên sẽ có những lỗi hay trải nghiệm không thực sự hài lòng. Nhưng chúng mình mong rằng các bạn có khoảng thời gian thư giãn khi trải nghiệm trang web của chúng mình. Yêu các bạn và cảm ơn rất nhiều. <br>Thân gửi, <span style="color: red;">ACTION!</span>.</p>
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-col l3 m6 w3-margin-bottom" style="margin-left: 240px;">
+    <img src="phong.jpg" alt="Phong" style="width:70%" height="340">
+    <h3>Nguyen The Phong - HE140289</h3>
+    <p class="w3-opacity">Website Editor</p>
+    <p>Edited the web, reloaded the news and I supported ideas for the website.</p><br>
+    <a href="https://www.facebook.com/daesung.bigbang.96"><button class="w3-button w3-light-grey w3-block">CONTACT</button></a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="kien.jpg" alt="Kien" style="width:70%" height="340">
+    <h3>Cao Tam Kien - HE140322</h3>
+    <p class="w3-opacity">Online Supporter</p>
+    <p>Owner of the domain "<a href="https://tamkien.me/" style="color: #EB3223;">tamkien.me</a>". I test this site and make it available on the World Wide Web.</p>
+    <a href="https://www.facebook.com/TamkienCao"><button class="w3-button w3-light-grey w3-block">CONTACT</button></a>
+  </div>
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="viet.jpg" alt="Viet" style="width:70%" height="340">
+    <h3>Ha Quoc Viet - HE140321</h3>
+    <p class="w3-opacity">Website Creator</p>
+    <p>I created, formed and finished this website.</p><br><br>
+    <a href="https://www.facebook.com/qviet0023"><button class="w3-button w3-light-grey w3-block">CONTACT</button></a>
+  </div>
+</div>
+
+<!-- Contact Section -->
+
+<div class="w3-container w3-padding-32" id="contact">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="color: yellow;"><b>CONTACT</b></h3>
+  <center>
+    <form action="mailto:quocvietha23032000@gmail.com" method="post" enctype="text/plain">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="name" style="width: 60%">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="mail" style="width: 60%">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="comment" style="width: 60%; height: 120px">
+      <button class="w3-button w3-black w3-section" type="submit"><i class="fa fa-paper-plane"></i>SEND</button>
+    </form>
+  </center>
+</div>
+
+
+<!-- Image of location/map -->
+<div class="w3-container">
+  <center><img src="footer.jpg" class="w3-image" style="width:80%"></center>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Sincerely from <a href="https://tamkien.me" title="W3.CSS" target="_blank" class="w3-hover-text-red">ACTION!</a></p>
+</footer>
+
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}{
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+    }
+  </script>
+
 
 </body>
 </html>
