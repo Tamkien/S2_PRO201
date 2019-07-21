@@ -1,150 +1,22 @@
 s<!DOCTYPE html>
 <html>
 <head>
-	<title>PulpFiction</title>
+	<title>Pulp Fiction (1994)</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="rw.css">
 	<link rel="icon" type="image/ico" href="logo.png" />
-	<style>
-		p.small {
-			line-height: 0;
-		}
-
-		img.sticky {
-			position: -webkit-sticky;
-			position: sticky;
-			top: 0;
-		}
-
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			margin: 0;
-		}
-
-		/* Style the header */
-		.header {
-			background-color: #f1f1f1;
-			padding: 20px;
-			text-align: center;
-		}
-
-		/* Style the top navigation bar */
-		.topnav {
-			overflow: hidden;
-			background-color: #333;
-		}
-
-		/* Style the topnav links */
-		.topnav a {
-			float: left;
-			display: block;
-			color: #f2f2f2;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
-
-		/* Change color on hover */
-		.topnav a:hover {
-			background-color: #ddd;
-			color: black;
-		}
-
-		/* Create three unequal columns that floats next to each other */
-		.column {
-			float: left;
-			padding: 10px;
-		}
-
-		/* Left and right column */
-		.column.side {
-			width: 25%;
-		}
-
-		/* Middle column */
-		.column.middle {
-			width: 50%;
-		}
-
-		/* Clear floats after the columns */
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-		@media screen and (max-width: 600px) {
-			.column.side, .column.middle {
-				width: 100%;
-			}
-		}
-
-		hr.line {
-			border: 1px solid red;
-		}
-
-		.box {
-			width: 60px;
-			height: 25px;
-			border: 1px solid gray;
-			background-color: gray;
-		}
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		.rate {
-			float: left;
-			height: 46px;
-			padding: 0 10px;
-		}
-		.rate:not(:checked) > input {
-			position:absolute;
-			top:-9999px;
-		}
-		.rate:not(:checked) > label {
-			float:right;
-			width:1em;
-			overflow:hidden;
-			white-space:nowrap;
-			cursor:pointer;
-			font-size:30px;
-			color:#ccc;
-		}
-		.rate:not(:checked) > label:before {
-			content: '★ ';
-		}
-		.rate > input:checked ~ label {
-			color: #ffc700;    
-		}
-		.rate:not(:checked) > label:hover,
-		.rate:not(:checked) > label:hover ~ label {
-			color: #deb217;  
-		}
-		.rate > input:checked + label:hover,
-		.rate > input:checked + label:hover ~ label,
-		.rate > input:checked ~ label:hover,
-		.rate > input:checked ~ label:hover ~ label,
-		.rate > label:hover ~ input:checked ~ label {
-			color: #c59b08;
-		}
-	</style>
 </head>
 <body>
 	<div class="w3-top">
-		<div class="w3-bar w3-white w3-wide w3-padding w3-card">
-			<a href="#home" class="w3-bar-item w3-button"><img src="logo.png" width="50" height="50"><b style="color: red">ACTION!</b></a>
+		<div class="w3-bar w3-white w3-wide w3-card">
+			<a href="file:///D:/Study/HTML/Official%20Project/HomePage.html" class="w3-bar-item"><img src="logo.png" width="40" height="40"><b style="color: red">ACTION!</b></a>
 			<!-- Float links to the right. Hide them on small screens -->
 			<div class="w3-right w3-hide-small">
-				<a href="#movies" class="w3-bar-item w3-button">Movies</a>
-				<a href="#about" class="w3-bar-item w3-button">About</a>
-				<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+				<a href="file:///D:/Study/HTML/Official%20Project/HomePage.html#movies" class="w3-bar-item" style="color: red"><b>Phim</b></a>
+				<a href="file:///D:/Study/HTML/Official%20Project/HomePage.html#news" class="w3-bar-item" style="color: red;"><b>Tin tức</b></a>
+				<a href="file:///D:/Study/HTML/Official%20Project/HomePage.html#contact" class="w3-bar-item" style="color: red"><b>Liên hệ</b></a>
 			</div>
 		</div>
 	</div>
@@ -160,7 +32,7 @@ s<!DOCTYPE html>
 				<p style="font-size: 150%"><font color="red"><b>Thông tin phim</b></font></p>
 				<hr class="line">
 				<p><b>Rated:</b>&emsp;&emsp;&emsp;R </p>
-				<p><b>Thể loại:</b>&emsp;&ensp;&nbsp; Phim tâm lý, tội phạm</p>
+				<p><b>Thể loại:</b>&emsp;&ensp;&nbsp;Phim tâm lý, tội phạm</p>
 				<p><b>Đạo diễn:</b>&emsp;&nbsp;Quentin Tarantino</p>
 				<table style="font-size: 102%"  cellspacing="0px">
 					<tr>
@@ -188,21 +60,17 @@ s<!DOCTYPE html>
 			</div>
 
 			<div class="column middle">
-				<h2><b>Pulp Fiction</b></h2>
+				<h2><b>Pulp Fiction (1994)</b></h2>
 				<p class="small" style="font-size: 120%">Chuyện tào lao	</p>
 				<div class="row">
 					<div class="column">
-						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0068646" data-style="p2">
-							<a href="https://www.imdb.com/title/tt0068646/?ref_=plg_rt_1">
-								<img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" The Godfather
-								(1972) on IMDb" />
-							</a>
+						<span class="imdbRatingPlugin" data-user="ur104569374" data-title="tt0110912" data-style="p2"><a href="https://www.imdb.com/title/tt0110912/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_38x18.png" alt=" Pulp Fiction (1994) on IMDb" /></a>
 						</span>
 					</div>
-					<div class="column">
+					<div class="column" style="margin-top: 5px;">
 						<div class="box" style="color: white;"><center>R</center></div>
 					</div>
-					<div class="column">
+					<div class="column" style="margin-top: 5px;">
 						<div class="box" style="color: white;"><center>154'</center></div>
 					</div>
 				</div>
@@ -229,7 +97,7 @@ s<!DOCTYPE html>
 				<p>Ngoài ra, Uma Thurman được đề cử Oscar với vai ả Mia và trở thành "nàng thơ" sau này của Tarantino. Còn Bruce Willis cũng được ghi nhận về khả năng diễn xuất chứ không phải một gã vai u thịt bắp chỉ có thể đóng phim hành động như Die Hard. Ngay cả những nhân vật phụ như "chuyên gia dọn dẹp" Wolf (Harvey Keitel) hay hai tên cướp nhà hàng ở đầu lẫn cuối phim cũng có chỗ đứng trong lòng khán giả. Diễn viên tệ nhất phim có lẽ là ... Tarantino, khi ông đóng vai nhỏ Jimmie.</p>
 				<h3><b>Kỳ tích của "quái kiệt" Tarantino</b></h3>
 				<p>Đạo diễn Tarantino sinh năm 1963. Ông bỏ học năm 16 tuổi và nuôi mộng thành diễn viên bằng cách theo học một khóa diễn xuất. Nhưng sau hai năm, Tarantino chán nản rồi đi làm nhân viên tại tiệm cho thuê video nằm ở khu Manhattan. Đây chính là "ngôi trường điện ảnh" sinh động nhất của Taratino, vì ông được thoải mái xem hàng nghìn bộ phim đủ mọi thể loại, từ đó chịu ảnh hưởng của những đạo diễn bậc thầy như Martin Scorsese, Sergio Leone hay Gerardo de Leon... Không những xem phim miễn phí, ông còn dành hàng giờ để trò truyện với những người tới thuê băng về phim ảnh và theo dõi kỹ khách hàng thường xem thể loại phim nào. Nhờ đó, Tarantino trở thành "pho từ điển sống" của môn nghệ thuật thứ bảy cũng như hiểu tường tận khán giả muốn được thấy gì ở một bộ phim. Ông từng nói: "Tôi chưa từng học về điện ảnh mà tôi sống trong nó".</p>
-				<center><img src="DaoDien.PNG" width="100%"></center>
+				<center><img src="DaoDien.png" width="100%"></center>
 				<p>Vốn kiến thức ấy được Tarantino áp dụng triệt để vào phim đầu tay Reservoir Dogs (năm 1992). Phim kể câu chuyện về một nhóm cướp với phong cách độc đáo, bạo lực mà vẫn rất hài hước. Phim nhanh chóng trở thành hiện tượng. Hai năm sau Reservoir Dogs, Pulp Fiction ra đời, đưa Tarantino lên tầm cao mới. Tác phẩm đoạt Cành cọ Vàng tại LHP Cannes và nhận được vô số lời khen ngợi từ giới phê bình.</p>
 				<p>Ở Quentin Tarantino, Hollywood nhìn thấy sự đổi mới mang tính cách mạng mà Orson Welles từng làm được với Citizen Kane (1941) hay Steven Spielberg với những phim bom tấn thập niên 70-80 thế kỷ trước. Tự viết kịch bản và làm phim theo đúng ý mình, Tarantino thỏa sức đưa những thể loại ông ưa thích lên màn ảnh, tiêu biểu là "nồi lẩu thập cẩm" Pulp Fiction.</p>
 				<p>Hài hước, hành động, rùng rợn, tình cảm... tất cả đều có trong "nồi lẩu" Pulp Fiction. "Bếp trưởng" Tarantino khéo léo kết hợp hương vị của từng nguyên liệu điện ảnh vào "nồi lẩu" ấy và làm hài lòng mọi thực khách. Ở Pulp Fiction, người xem thấy võ sĩ Quyền Anh chiến đấu bằng kiếm katana, gặp tên sát thủ bình thản trích dẫn Kinh Thánh trước khi giết người không gớm tay... Những câu thoại trong phim vừa tinh tế, vừa hài hước. Và trên tất cả là cách kể chuyện "phi tuyến tính", làm người xem bị cuốn hút ngay từ những phút giây đầu tiên.</p>
@@ -254,15 +122,223 @@ s<!DOCTYPE html>
 					<input type="radio" id="star1" name="rate" value="1" />
 					<label for="star1" title="text">1 star</label>
 				</div>
-				<i><textarea rows="4" cols="23" name="comment" form="usrform">&ensp;Bình luận</textarea></i>
+				<i><textarea rows="4" cols="23" name="comment" form="usrform" placeholder="Comment"></textarea></i>
 				<br>
 				<button type="submit" form="nameform" value="Submit" style="width: 20%; margin-left: 170px">Gửi</button>
-			</div>
-		</div>
-	</div>
+				<br><br><br>
+				<p style="color: red;"><b>REVIEWS</b></p>
+				<hr class="line">
+				<table style="border-spacing: 5px 14px;">
+					<tr valign="top">
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/Batman/Batman.html">
+								<img src="batmannews.jpg" style="width: 100px; height: 80px;">
+							</a>
+						</td>
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/Batman/Batman.html">
+								Sự hoàn hảo của The Dark Knight.
+							</a>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/EndGame/EndGame.html">
+								<img src="egnews.jpg" style="width: 100px; height: 80px;">
+							</a>
+						</td>
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/EndGame/EndGame.html">
+								EG: Hồi kết mãn nhãn đầu tiên của đế chế MCU.
+							</a>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/InfinityWar/InfinityWar.html">
+								<img src="iwnews.jpg" style="width: 100px; height: 80px;">
+							</a>
+						</td>
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/InfinityWar/InfinityWar.html">
+								10 năm chờ đợi, 150 phút hoàng tráng của IW.
+							</a>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/Godfather/godfather.html">
+								<img src="godfather.gif" style="width: 100px; height: 80px;">
+							</a>
+						</td>
+						<td>
+							<a href="file:///D:/Study/HTML/Official%20Project/Reviews/Godfather/godfather.html">
+								The Godfather (1972) – Tuyệt tác của điện ảnh.
+							</a>
+						</td>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/Reviews/Titanic/Titanic.html">
+									<img src="ttnnews.jpg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/Reviews/Titanic/Titanic.html">
+								Titanic - Những niềm cảm hứng bất tận.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/Reviews/LalaLand/LalaLand.html">
+									<img src="lanews.jpg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/Reviews/LalaLand/LalaLand.html">
+									‘La La Land’: Sự hồi sinh của những giấc mơ lãng mạn.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/Reviews/NhaTu/NhaTu.html">
+									<img src="ssnews.jpg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/Reviews/NhaTu/NhaTu.html">
+									5 bài học từ bộ phim có điểm số cao nhất mọi thời đại.
+								</a>
+							</td>
+						</tr>
+					</table><br><br>
+					<p style="color: red;"><b>TIN TỨC</b></p>
+					<hr class="line">
 
-	<script>
-		(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
-	</script>
-</body>
-</html>
+					<table style="border-spacing: 5px 14px;">
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news1.html">
+									<img src="file:///D:/Study/HTML/Official%20Project/News/pic2.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news1.html">
+									Nàng Tiên Cá da màu mới của Disney là ai?
+								</a>
+							</td>
+						</tr><tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news3.html">
+									<img src="dave1.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news3.html">
+									Dave Bautista 'đá đểu' Fast and Furious trên Twitter.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news6.html">
+									<img src="king2.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news6.html">
+									Lion King có thể đạt $150 triệu + mở màn?
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news2.html">
+									<img src="euphoria2.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news2.html">
+									Euphoria gây tranh cãi vì quá nhiều cảnh tình dục thiếu niên.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news5.html">
+									<img src="av3.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news5.html">
+									Avengers: Endgame chưa kết thúc.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news4.html">
+									<img src="hunger2.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/news4.html">
+									Hunger Games tiền truyện sẽ ra mắt năm 2020.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/emmy.html">
+									<img src="emmy3.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/emmy.html">
+									Emmy sẽ tiếp bước Oscar và không có MC?
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/spidey.html">
+									<img src="spidey1.jpg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/spidey.html">
+									Far From Home kỳ vọng đạt 154 triệu đô trong 6 ngày.
+								</a>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/got.html">
+									<img src="got2.jpeg" style="width: 100px; height: 80px;">
+								</a>
+							</td>
+							<td>
+								<a href="file:///D:/Study/HTML/Official%20Project/News/got.html">
+									GoT tranh giải Kịch bản và Đạo diễn tại Emmy 2019.
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="w3-container">
+						<br><br>
+						<hr class="line">
+						<center><img src="file:///D:/Study/HTML/Official%20Project/footer.jpg" class="w3-image" style="width:80%"></center>
+					</div>
+
+					<!-- Footer -->
+					<footer class="w3-center w3-black w3-padding-16">
+						<p>Sincerely from <a href="file:///D:/Study/HTML/Official%20Project/HomePage.html" title="W3.CSS" target="_blank" class="w3-hover-text-red">ACTION!</a></p>
+					</footer>
+
+		<script>
+			(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");
+		</script>
+	</body>
+	</html>
